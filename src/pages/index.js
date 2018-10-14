@@ -1,6 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-import Mc from '../components/Mc';
 
 import Layout from '../components/layout';
 
@@ -11,7 +10,7 @@ import pic04 from '../assets/images/pic04.jpg'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Gatsby Starter - Photon";
+        const siteTitle = "Topaz - Blockchain Simplified";
 
         return (
             <Layout>
@@ -24,7 +23,6 @@ class Homepage extends React.Component {
                                 <h2>Lorem ipsum dolor adipiscing<br />
                                 amet dolor consequat</h2>
                             </header>
-                            <Mc />
                             <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
                         </div>
                         <div className="col-6">

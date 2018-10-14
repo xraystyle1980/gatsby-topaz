@@ -1,19 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Mc from '../components/Mc';
 
 class Header extends React.Component {
     render() {
         return (
             <section id="header">
-                <div className="inner">
-                    <span className="icon major fa-cloud"></span>
-                    <h1>Hi, I'm <strong>Photon</strong>, another fine<br />
-                    little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
-                    <p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-                    lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-                    <ul className="actions">
-                        <li><a href="#one" className="button scrolly">Discover</a></li>
-                    </ul>
-                </div>
+              <div className="inner">
+                <h1>Blockchain simplified.</h1>
+                <p>Get on the blockchain at minimum cost. No transaction fees, no cryptocurrency storage, no smart contract development. Proof of existence in one line of code.</p>
+                <Mc />
+              </div>
             </section>
         )
     }
