@@ -7,8 +7,8 @@ class Header extends React.Component {
             <section className="home__header--white">
               <div className="grid-wrapper">
                 <div className="col-12">
-                  <h1 className="white">Blockchain simplified.</h1>
-                  <p className="white">Get on the blockchain at minimum cost. No transaction fees, no cryptocurrency storage, no smart contract development. Proof of existence in one line of code.</p>
+                  <h1 className="hero__headline--white">Blockchain simplified.</h1>
+                  <p className="hero__paragraph--white">Get on the blockchain at minimum cost. No transaction fees, no cryptocurrency storage, no smart contract development. Proof of existence in one line of code.</p>
                   <Mc />
                 </div>
               </div>
