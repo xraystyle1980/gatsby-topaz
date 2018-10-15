@@ -34,7 +34,6 @@ class Template extends React.Component {
               <Navigation />
               <Header />
               {children}
-              <Footer />
             </div>
         );
     }

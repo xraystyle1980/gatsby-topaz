@@ -97,6 +97,13 @@ p {
 	color: #FFF;
 	margin-bottom: 4em;
 }
+.hero__paragraph--white strong {
+	font-weight: 800;
+}
+
+.features__hero--home {
+	padding: 10em 0 4em 0;
+}
 
 .topaz-header {
 	padding: 1em 0;
@@ -116,6 +123,15 @@ p {
 
 .navigation__desktop--white ul li a {
 	border-bottom: 0;
+}
+
+.bodyctatemp {
+	background-image: linear-gradient(-224deg, #00EAFF 0%, #0064ED 100%);
+	padding: 4em 0 0 0;
+}
+
+#footer {
+	padding-bottom: 0;
 }
 
 /* Screen reader only */
