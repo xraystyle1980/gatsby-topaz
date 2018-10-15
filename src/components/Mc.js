@@ -37,17 +37,19 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <section>
-          <div className="inner">
-              <div>
-                <h3 className="align-center">Our developer sandbox is open. Come play.</h3>
-                <div>
-                  <form onSubmit={this._handleSubmit} className="form__signup--inline">
-                    <input type="email" onChange={this._handleChange} placeholder="&#xf0e0; &nbsp;Email" name="email" />
-                    <input type="submit" value="Sign Up" />
-                  </form>
-                </div>
-              </div>
+        <form onSubmit={this._handleSubmit} className="form__signup--inline">
+          <div className="grid-wrapper">
+            <div className="col-12">
+              <h3 className="align-center white">Our developer sandbox is open. Come play.</h3>
+            </div>
+            <div class="col-6">
+              <input type="email" onChange={this._handleChange} placeholder="&#xf0e0; &nbsp;Email" name="email" />
+            </div>
+            <div class="col-6">
+              <input type="submit" value="Sign Up" />
+            </div>
           </div>
+        </form>
       </section>
 
     )

@@ -10,25 +10,31 @@
 
 // Size.
 	$size: (
-		border-radius:		4px,
+		border-radius:		5em,
 		element-height:		2.75em,
 		element-margin:		2em
 	);
 
 // Font.
 	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				300,
-		weight-bold:		400
+		family-h1h2: ('Open Sans', Helvetica, sans-serif),
+		family-body: ('Nunito Sans', Helvetica, sans-serif),
+		family-fixed: ('Courier New', monospace),
+		weight: 300,
+		weight-h1h2: 600
 	);
 
 // Palette.
 	$palette: (
+		amber: #FFBF00,
+		amber-contrast: #3B5960,
+		amber-hover: #FF9100,
+
 		bg:					#000,
 		fg:					#666,
 		fg-bold:			#555,
 		fg-light: 			#999,
+		fg-white: #FFF,
 		border:				rgba(144,144,144,0.5),
 		border-bg:			rgba(144,144,144,0.075),
 		border2:			rgba(144,144,144,0.75),

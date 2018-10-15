@@ -1,20 +1,15 @@
 import React from "react";
+import pic01 from '../assets/images/logo-topaz.svg' ;
 
 
 const Navigation = () => (
   <header>
-    <a href="#main-menu"
-       class="menu-toggle"
-       role="button"
-       id="main-menu-toggle"
-       aria-expanded="false"
-       aria-controls="main-menu"
-       aria-label="Open main menu">
+    <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
       <span className="sr-only">Open main menu</span>
       <span className="fa fa-bars" aria-hidden="true"></span>
     </a>
 
-    <h1 className="logo">hamburgers</h1>
+    <a href="#home" className="logo"><img src={pic01} alt="Topaz" /></a>
 
     <nav id="main-menu"
          className="main-menu"
@@ -32,9 +27,9 @@ const Navigation = () => (
         <span className="fa fa-close" aria-hidden="true"></span>
       </a>
       <ul>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a className="navlinks__desktop--white" href="#">Learn</a></li>
+        <li><a className="navlinks__desktop--white" href="#">About</a></li>
+        <li><a className="navlinks__desktop--white" href="#">Contact</a></li>
       </ul>
     </nav>
     <a href="#main-menu-toggle"

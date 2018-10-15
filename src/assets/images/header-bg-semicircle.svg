@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6000px" height="1000px" viewBox="0 0 6000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="98.8529497%" y1="-0.486959886%" x2="0.486959886%" y2="98.8529497%" id="linearGradient-1">
+            <stop stop-color="#00EAFF" offset="0%"></stop>
+            <stop stop-color="#0064ED" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Sitemap" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page"></g>
+        <path d="M6000,0 C6000,0 5499,1000 3000,1000 C499,1000 0,0 0,0 L6000,0 Z" id="Fill-1" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>
