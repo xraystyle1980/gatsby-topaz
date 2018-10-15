@@ -46,21 +46,28 @@ p {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 400;
 }
+
 .logo {
 	border-bottom: 0;
-	width: 200px;
+}
+
+.logo img {
+	max-width: 200px;
 }
 
 .navlinks__desktop--white {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 800;
-	display: block;
   padding: .75em 15px;
   line-height: 1em;
   font-size: 1em;
   color: #fff;
   text-decoration: none;
 	text-transform: uppercase;
+}
+
+.navlinks__desktop--white:hover {
+  color: _palette(amber-contrast);
 }
 
 .form__signup--inline{
@@ -77,6 +84,26 @@ p {
 
 .home__header--white {
 	padding: 5em 0 5em 0;
+}
+
+.topaz-header {
+	padding: 1em 0;
+}
+
+.navigation__desktop--white {
+	float: right;
+}
+
+.navigation__desktop--white ul {
+	display: flex;
+}
+
+.navigation__desktop--white ul li {
+	display: inline-flex;
+}
+
+.navigation__desktop--white ul li a {
+	border-bottom: 0;
 }
 
 /* Screen reader only */
@@ -254,36 +281,4 @@ p {
     background: none; /* Remove background from off-canvas styling */
     color: #ffbf00;
   }
-}
-
-/*
- Demo purposes only
-*/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-header {
-  padding: 20px;
-  display: flex;
-  align-items: baseline;
-}
-
-article {
-  padding: 30px;
-  width: 55em;
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
-article h2 {
-  font-weight: 500;
-  font-size: 28px;
-}
-
-.logo {
-  margin: 0 30px 0 10px;
-  font-size: 1.5em;
 }
