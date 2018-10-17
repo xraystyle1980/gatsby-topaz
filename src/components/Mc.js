@@ -40,12 +40,12 @@ export default class IndexPage extends React.Component {
         <form onSubmit={this._handleSubmit} className="form__signup--inline">
           <div className="grid-wrapper">
             <div className="col-12">
-              <h2 className="align-center white">Our developer sandbox is open. Come play.</h2>
-            </div>
-            <div className="col-6 form__signup-col-padding">
-              <input type="email" onChange={this._handleChange} placeholder="&#xf0e0; &nbsp;Email" name="email" />
+              <h2 className="align-center white signup__label">Our developer sandbox is open. Come play.</h2>
             </div>
             <div className="col-6">
+              <input type="email" onChange={this._handleChange} placeholder="&#xf0e0; &nbsp;Email" name="email" />
+            </div>
+            <div className="col-6 align-center">
               <input type="submit" value="Sign Up" />
             </div>
           </div>

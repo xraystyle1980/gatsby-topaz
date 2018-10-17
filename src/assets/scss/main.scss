@@ -267,7 +267,7 @@
 		text-decoration: none;
 
 		&:invalid {
-			box-shadow: none;
+			box-shadow: 0 16px 64px 0 rgba(0,0,0,0.24);
 		}
 
 		&:focus {

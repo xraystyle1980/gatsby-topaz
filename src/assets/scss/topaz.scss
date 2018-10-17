@@ -13,8 +13,9 @@
 	2. Elements...............  html, body, heading and paragraph, input, links, images
 	3. Objects................  containers, layout
 	4. Components.............  logo, navigation
-	5. Utilities..............
+	5. Utilities..............  island of misfit classes
 */
+
 
 
 
@@ -26,6 +27,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
+@import 'libs/angled-edges';
 
 @import url('../css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Source+Sans+Pro:600');
@@ -80,11 +82,16 @@ input {
 }
 
 .body {
-	background-color:	#FAFAFA;
-	background-image: url('../images/header-bg-geometric.svg'), url('../images/header-bg-semicircle.svg');
-	background-position: right -400px top -120px, center top 0px;
-	background-repeat: no-repeat;
-	background-size: contain, 3600px;
+	background-color: #FAFAFA;
+}
+
+.header__background--gradient {
+	background-image: linear-gradient(226deg, #83D0F1 0%, #208DB0 50%);
+}
+
+.header__background--content {
+	background-color:	transparent;
+	padding-bottom: 6em;
 }
 
 
@@ -97,18 +104,6 @@ input {
 .container {
 	padding: 0 1em;
 }
-
-
-
-.white {
-	color: _palette(fg-white);
-}
-
-.fas {
-  font-family: 'FontAwesome', sans-serif;
-  font-style: normal;
-}
-
 
 .logo {
 	text-align: left;
@@ -127,9 +122,6 @@ input {
 /*
 	4. Components.............  logo, navigation
 */
-.form__signup-col-padding {
-	padding: .85em 0 0;
-}
 
 .logo a {
 	border-bottom: 0;
@@ -177,15 +169,62 @@ input {
 }
 
 .form__signup--inline{
-	display: flex;
-	flex-flow: row wrap;
-	/* This aligns items to the end line on main-axis */
-	justify-content: center;
+
 }
 
 .form__signup--inline input {
   width: 100%;
   margin: .625em 0;
+	background: #FFFFFF;
+	font-size: 1em;
+	padding: 0 2em;
+	height: 72px;
+	color: #AAB2B5;
+	border: none;
+	box-shadow: 0 16px 64px 0 rgba(0,0,0,0.24);
+}
+
+.form__signup--inline input[type="submit"] {
+	@include vendor('appearance', 'none');
+	@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
+	width: 100%;
+	background-color: _palette(amber);
+	color: _palette(amber-contrast);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.9em;
+	padding: 0 1em;
+	height: 72px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 800;
+	letter-spacing: 0.125em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+	&:hover {
+		background-color: _palette(amber-hover);
+	}
+
+	&:active {
+		background-color: _palette(border2-bg);
+	}
+	&:invalid {
+		box-shadow: 0 16px 64px 0 rgba(0,0,0,0.24);
+	}
+}
+
+@include breakpoint(xxsmalltomedium) {
+	.form__signup--inline input[type="submit"] {
+		height: 60px;
+		width: 85%;
+	}
+}
+
+.signup__label {
+	font-size: 1.625em;
+	padding: 1em 0;
 }
 
 .home__header--white {
@@ -195,14 +234,14 @@ input {
 .hero__headline--white {
 	font-size: 4em;
 	color: #FFF;
-	margin: .75em 0 .125em;
+	margin: .125em 0 .125em;
 }
 
 .hero__paragraph--white {
-	font-size: 1.25em;
+	font-size: 1.45em;
   color: #FFF;
-  margin-bottom: 4em;
-  padding-top: 20px;
+  margin-bottom: 2.75em;
+  padding-top: 1em;
   line-height: 1.25em;
 }
 .hero__paragraph--white strong {
@@ -403,4 +442,25 @@ input {
     background: none; /* Remove background from off-canvas styling */
     color: #ffbf00;
   }
+}
+
+
+
+
+
+/*
+5. Utilities..............
+*/
+
+.breathing-room {
+	padding: 2em;
+}
+
+.white {
+	color: _palette(fg-white);
+}
+
+.fas {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
 }

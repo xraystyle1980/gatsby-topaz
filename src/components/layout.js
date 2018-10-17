@@ -31,9 +31,12 @@ class Template extends React.Component {
 
         return (
             <div className={`body ${this.state.loading}`}>
-              <Navigation />
-              <Header />
+              <div className="header__background--gradient angle--bottom-right">
+                <Navigation />
+                <Header />
+              </div>
               {children}
+              <Footer />
             </div>
         );
     }

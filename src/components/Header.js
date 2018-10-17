@@ -4,6 +4,7 @@ import Mc from '../components/Mc';
 class Header extends React.Component {
     render() {
         return (
+          <div className="header__background--content">
           <div className="container">
             <section className="home__header--white">
               <div className="grid-wrapper">
@@ -14,8 +15,8 @@ class Header extends React.Component {
                 </div>
               </div>
             </section>
-            </div>
-
+          </div>
+          </div>
         )
     }
 }
