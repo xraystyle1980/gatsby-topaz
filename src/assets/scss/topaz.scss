@@ -1,32 +1,60 @@
+/*
+	Topaz built on Photon from html5up.net | @ajlkn
+*/
+
+/*
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*
+	1. Generic................  imports and resets
+	2. Elements...............  html, body, heading and paragraph, input, links, images
+	3. Objects................  containers, layout
+	4. Components.............  logo, navigation
+	5. Utilities..............
+*/
+
+
+
+
+/*
+	1. Generic................  imports and resets
+*/
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
+
 @import url('../css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Source+Sans+Pro:600');
 
-input {
-	font-family: 'FontAwesome', sans-serif;
-} /* This is for the placeholder */
-.fas {
-  font-family: 'FontAwesome', sans-serif;
-  font-style: normal;
-}
+@import "css-grid";
 
-.body {
-	background-color:	#FAFAFA;
-	background-image: url('../images/header-bg-geometric.svg'), url('../images/header-bg-semicircle.svg');
-	background-position: right -400px top -120px, center top 0px;
-	background-repeat: no-repeat;
-	background-size: contain, 3600px;
-}
+@include skel-breakpoints((
+	xlarge: '(max-width: 1680px)',
+	large: '(min-width:981px) and (max-width: 1280px)',
+	medium: '(min-width:737px) and (max-width: 980px)',
+	small: '(max-width: 736px)',
+	xsmall: '(max-width: 480px)',
+	xxsmall: '(min-width:0px) and (max-width: 360px)',
+	xxsmalltomedium: '(min-width:0px) and (max-width: 980px)',
+));
 
-.white {
-	color: _palette(fg-white);
-}
+@include skel-layout((
+	reset: 'full',
+	boxModel: 'border',
+));
 
 
 
+
+
+
+/*
+	2. Elements...............  html, body, heading and paragraph, input, links, images
+*/
 html, body {
   margin: 0;
   height: 100%;
@@ -47,12 +75,90 @@ p {
 	font-weight: 400;
 }
 
+input {
+	font-family: 'FontAwesome', sans-serif;
+}
+
+.body {
+	background-color:	#FAFAFA;
+	background-image: url('../images/header-bg-geometric.svg'), url('../images/header-bg-semicircle.svg');
+	background-position: right -400px top -120px, center top 0px;
+	background-repeat: no-repeat;
+	background-size: contain, 3600px;
+}
+
+
+
+
+
+/*
+	3. Objects................  containers, layout
+*/
+.container {
+	padding: 0 1em;
+}
+
+
+
+.white {
+	color: _palette(fg-white);
+}
+
+.fas {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
+}
+
+
 .logo {
+	text-align: left;
+}
+
+@include breakpoint(xxsmalltomedium) {
+	.logo {
+		text-align: center;
+	}
+}
+
+
+
+
+
+/*
+	4. Components.............  logo, navigation
+*/
+.form__signup-col-padding {
+	padding: .85em 0 0;
+}
+
+.logo a {
 	border-bottom: 0;
 }
 
 .logo img {
 	max-width: 200px;
+}
+
+@include breakpoint(xxsmalltomedium) {
+	.navigation__desktop--white {
+		display: none;
+	}
+}
+
+.navigation__desktop--white {
+	float: right;
+}
+
+.navigation__desktop--white ul {
+	display: flex;
+}
+
+.navigation__desktop--white ul li {
+	display: inline-flex;
+}
+
+.navigation__desktop--white ul li a {
+	border-bottom: 0;
 }
 
 .navlinks__desktop--white {
@@ -89,13 +195,15 @@ p {
 .hero__headline--white {
 	font-size: 4em;
 	color: #FFF;
-	margin: 0;
+	margin: .75em 0 .125em;
 }
 
 .hero__paragraph--white {
-	font-size: 1em;
-	color: #FFF;
-	margin-bottom: 4em;
+	font-size: 1.25em;
+  color: #FFF;
+  margin-bottom: 4em;
+  padding-top: 20px;
+  line-height: 1.25em;
 }
 .hero__paragraph--white strong {
 	font-weight: 800;
@@ -109,21 +217,7 @@ p {
 	padding: 1em 0;
 }
 
-.navigation__desktop--white {
-	float: right;
-}
 
-.navigation__desktop--white ul {
-	display: flex;
-}
-
-.navigation__desktop--white ul li {
-	display: inline-flex;
-}
-
-.navigation__desktop--white ul li a {
-	border-bottom: 0;
-}
 
 .bodyctatemp {
 	background-image: linear-gradient(-224deg, #00EAFF 0%, #0064ED 100%);

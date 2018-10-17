@@ -25,6 +25,8 @@
 	boxModel: 'border'
 ));
 
+
+
 /* Basic */
 
 	body {
@@ -141,7 +143,6 @@
 
 	code {
 		background: _palette(border-bg);
-		border-radius: _size(border-radius);
 		border: solid 1px _palette(border);
 		font-family: _font(family-fixed);
 		font-size: 0.9em;
@@ -257,7 +258,6 @@
 	textarea {
 		@include vendor('appearance', 'none');
 		background: #FFF;
-		border-radius: _size(border-radius);
 		border: solid 1px _palette(border);
 		color: #000;
 		display: block;
@@ -333,7 +333,6 @@
 
 			&:before {
 				background: _palette(border-bg);
-				border-radius: _size(border-radius);
 				border: solid 1px _palette(border);
 				content: '';
 				display: inline-block;
@@ -407,7 +406,6 @@
 /* Box */
 
 	.box {
-		border-radius: _size(border-radius);
 		border: solid 1px _palette(border);
 		margin-bottom: _size(element-margin);
 		padding: 1.5em;
@@ -460,13 +458,11 @@
 /* Image */
 
 	.image {
-		border-radius: _size(border-radius);
 		border: 0;
 		display: inline-block;
 		position: relative;
 
 		img {
-			border-radius: _size(border-radius);
 			display: block;
 		}
 
@@ -759,7 +755,6 @@
 		@include vendor('appearance', 'none');
 		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
 		background-color: _palette(amber);
-		border-radius: _size(border-radius);
 		border: 0;
 		color: _palette(amber-contrast);
 		cursor: pointer;
