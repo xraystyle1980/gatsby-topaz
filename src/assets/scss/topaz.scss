@@ -97,6 +97,12 @@ input {
 	background-position: top 10% right -50%;
 }
 
+@include breakpoint(xxsmalltomedium) {
+	.header__background--logo {
+		background-position: top 10% right 100%;
+	}
+}
+
 .header__background--content {
 	background-color:	transparent;
 	padding-bottom: 6em;
