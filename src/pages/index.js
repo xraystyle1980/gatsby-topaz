@@ -39,19 +39,7 @@ class Homepage extends React.Component {
                         <Mc />
                     </div>
 
-                    <section id="footer">
                     
-                        <ul className="icons">
-                            <li><a href="#" className="icon alt fa-twitter"><span className="label">Twitter</span></a></li>
-                            <li><a href="#" className="icon alt fa-facebook"><span className="label">Facebook</span></a></li>
-                            <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
-                            <li><a href="#" className="icon alt fa-github"><span className="label">GitHub</span></a></li>
-                            <li><a href="#" className="icon alt fa-envelope"><span className="label">Email</span></a></li>
-                        </ul>
-                        <ul className="copyright">
-                            <li><p>&copy; TOPAZ</p></li>
-                        </ul>
-                    </section>
                 </section>
 
             </Layout>
