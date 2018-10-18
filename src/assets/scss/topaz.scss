@@ -159,8 +159,8 @@ input {
 	display: flex;
 }
 
-.navigation__desktop--white ul li {
-	display: inline-flex;
+.navigation__desktop--white ul li img {
+	max-width: 28px;
 }
 
 .navigation__desktop--white ul li a {
@@ -171,7 +171,7 @@ input {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 800;
   padding: .75em 15px;
-  line-height: 1em;
+  line-height: 1.85em;
   font-size: 1em;
   color: #fff;
   text-decoration: none;
