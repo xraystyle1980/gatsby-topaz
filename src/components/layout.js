@@ -38,7 +38,9 @@ class Template extends React.Component {
                 </div>
               </div>
               {children}
-              <Footer />
+              <div className="header__background--gradient angle--top-left">
+                <Footer />
+              </div>
             </div>
         );
     }

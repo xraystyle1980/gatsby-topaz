@@ -11,6 +11,9 @@ class Header extends React.Component {
                   <div className="col-12">
                     <h1 className="hero__headline--white">Topaz tells the truth.</h1>
                     <p className="hero__paragraph--white"><strong>Proof of existence in one line of code.</strong> No transaction fees, no cryptocurrency storage, no smart contract development.</p>
+                    <div className="col-12">
+                      <h2 className="align-center white signup__label">Our developer sandbox is open. Come play.</h2>
+                    </div>
                     <Mc />
                   </div>
                 </div>

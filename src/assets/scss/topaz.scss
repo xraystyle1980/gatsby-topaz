@@ -95,13 +95,12 @@ input {
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: top 10% right -50%;
-}
-
-@include breakpoint(xxsmalltomedium) {
-	.header__background--logo {
+	@include breakpoint(xxsmalltomedium) {
 		background-position: top 10% right 100%;
 	}
 }
+
+
 
 .header__background--content {
 	background-color:	transparent;
@@ -109,22 +108,25 @@ input {
 }
 
 .footer {
-	@include padding(6em, 0, (0,0,_size(element-margin),0));
-	background-attachment:	fixed,							fixed,							fixed;
-	background-color: transparent;
-	background-position:	top left,						center center,					center center;
-	background-size:		auto,							cover,							cover;
+	padding: 10em 0 4em;
 	text-align: center;
 
-	.icons {
-		margin: 0;
+	@include breakpoint(xxsmalltomedium) {
+		padding: 6em 0 3em;
+	}
+
+	.footer__socialicons {
+		margin: 5em 0 0;
 	}
 
 	.copyright {
-		font-size: 0.8em;
+		font-size: 0.85em;
 		list-style: none;
 		margin: _size(element-margin) 0 0 0;
-		padding: 0;
+		padding: 1em 0 0;
+		color: white;
+		text-transform: uppercase;
+		font-weight: 800;
 
 		li {
 			border-left: solid 1px;
@@ -221,7 +223,7 @@ input {
 }
 
 .form__signup--inline{
-
+	padding: 2em 0;
 }
 
 .form__signup--inline input {
@@ -275,7 +277,6 @@ input {
 
 .signup__label {
 	font-size: 1.625em;
-	padding: .8em 0;
 	line-height: 1.25em;
 }
 
