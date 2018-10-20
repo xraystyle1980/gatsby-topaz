@@ -1,6 +1,8 @@
 import React from "react";
+import icon32 from '../assets/images/favicon-32x32.png';
 import Helmet from "react-helmet";
 import Mc from '../components/Mc';
+
 
 import Layout from '../components/layout';
 import FeaturesMultiGraphic from '../assets/images/features-multi-graphic.svg' ;
@@ -14,7 +16,16 @@ class Homepage extends React.Component {
 
         return (
             <Layout>
-                <Helmet title={siteTitle} />
+              <Helmet
+                title="Topaz | Proof of existence in one line of code"
+                meta={[
+                  { name: 'description', content: '' },
+                  { name: 'keywords', content: '' },
+                ]}
+                link={[
+                  { rel: 'shortcut icon', sizes: '32x32', type: 'image/png', href: `${icon32}` }
+                ]}
+                />
 
                   <section  className="features__hero--home">
                     <div className="container">
