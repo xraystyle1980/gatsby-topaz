@@ -99,7 +99,7 @@ body {
 }
 
 .header__background--gradient {
-	background: linear-gradient(226deg, #83D0F1 0%, #208DB0 50%);
+	background: linear-gradient(226deg, _palette(topaz-light-blue) 0%, _palette(topaz-dark-blue) 50%);
 }
 
 .header__background--logo {
@@ -322,7 +322,7 @@ body {
   color: #202020;
   margin: .75em 2.65em;
 	span {
-	  color: #498C8A;
+	  color: #00A6E2;
 	}
 	@include breakpoint(xxsmalltomedium) {
 	  font-size: 1.75em;
@@ -330,7 +330,6 @@ body {
 	  margin: 1.25em 1em 2.5em 1em;
 		span {
 			font-size: 1.5em;
-		  color: #498C8A;
 		}
 	}
 }
@@ -614,4 +613,8 @@ body {
 .fas {
   font-family: 'FontAwesome', sans-serif;
   font-style: normal;
+}
+
+.header--blue {
+	color: _palette(topaz-dark-blue);
 }

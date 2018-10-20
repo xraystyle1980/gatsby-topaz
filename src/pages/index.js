@@ -43,26 +43,26 @@ class Homepage extends React.Component {
                         <div className="col-4">
                           <div className="features__block--shadow">
                             <img src={iconEfficient} alt="Efficient" className="features__image--icon" />
-                            <h4>EFFICIENT</h4>
+                            <h4 className="header--blue">EFFICIENT</h4>
                             <p>Store data on Ethereum in the most efficient way possible.</p>
                           </div>
                         </div>
                         <div className="col-4">
                           <div className="features__block--shadow">
                             <img src={iconIntegrate} alt="Integrate" className="features__image--icon" />
-                            <h4>INTEGRATE</h4>
+                            <h4 className="header--blue">INTEGRATE</h4>
                             <p>Integrate with any existing codebase via first class packages.</p>
                           </div>
                         </div>
                         <div className="col-4">
                           <div className="features__block--shadow">
                             <img src={iconReporting} alt="Reporting" className="features__image--icon" />
-                            <h4>REPORTING</h4>
+                            <h4 className="header--blue">REPORTING</h4>
                             <p>Generate reports on the data you store on blockchain.</p>
                           </div>
                         </div>
 
-                        
+
 
                       </div>
                     </div>
