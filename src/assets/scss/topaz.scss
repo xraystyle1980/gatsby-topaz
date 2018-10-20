@@ -49,53 +49,17 @@
 	boxModel: 'border',
 ));
 
-// @import "~sass-rhythm";
 
 
-@import '../../../node_modules/shevy/core/shevy';
-@include headings;
-@include body;
-@include content;
+
 
 /*
 	2. Elements...............  html, body, heading, footer, and paragraph, input, links, images
 */
-// $sass-rhythm: 6;
-// $sass-rhythm-root-font-size: 16px;
-// html {
-//   font-size: sass-rhythm-relative-root-font-size();
-// }
-//
-// body {
-//   line-height: sass-rhythm(6);
-// }
-//
-// p,
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   margin: 0 0 sass-rhythm(2);
-// }
-//
-// h1 {
-//   line-height: sass-rhythm(8);
-// }
-// h2 {
-//   line-height: sass-rhythm(6);
-// }
-// h3 {
-//   line-height: sass-rhythm(4);
-// }
-// h4 {
-//   line-height: sass-rhythm(4);
-// }
-
-
-
-
+@import '../../../node_modules/shevy/core/shevy';
+@include headings;
+@include body;
+@include content;
 
 html, body {
   margin: 0;
@@ -139,8 +103,6 @@ input {
 		background-position: top 10% right 100%;
 	}
 }
-
-
 
 .header__background--content {
 	background-color:	transparent;
@@ -372,7 +334,19 @@ input {
 	background: #FFFFFF;
 	box-shadow: 0 32px 64px 0 rgba(0,0,0,0.16);
 	padding: 3em 2em;
-	margin: 2em 0;
+	margin: 2em 0 4em;
+	text-align: center;
+}
+
+.features__block--shadow h4, p {
+	text-align: left;
+}
+
+.features__image--icon {
+	width: 72px;
+	position: relative;
+	top: -80px;
+	margin-bottom: -60px;
 }
 
 .topaz-header {

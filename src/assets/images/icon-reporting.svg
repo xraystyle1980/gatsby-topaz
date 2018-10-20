@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="98px" viewBox="0 0 84 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>008-browser</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Sitemap" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page"></g>
+        <g id="Topaz-ContentMockup-Rough-Mobile-v1.3" transform="translate(-166.000000, -2507.000000)">
+            <g id="Group-9" transform="translate(27.000000, 2507.000000)">
+                <g id="008-browser" transform="translate(139.000000, 0.000000)">
+                    <g id="Group" transform="translate(20.904110, 20.863281)" fill="#242D3C">
+                        <path d="M62.9334521,77.1367188 L0.177205479,77.1367188 L0.177205479,10.8887188 L62.9334521,10.8887188 L62.9334521,77.1367188 Z M3.66339726,73.6567617 L59.4470685,73.6567617 L59.4470685,14.368293 L3.66339726,14.368293 L3.66339726,73.6567617 Z" id="Shape" fill-rule="nonzero"></path>
+                        <path d="M62.9334521,14.368293 L0.177205479,14.368293 L0.177205479,0.0147382813 L62.9334521,0.0147382813 L62.9334521,14.368293 Z M3.66339726,10.8887188 L59.4470685,10.8887188 L59.4470685,3.49469531 L3.66339726,3.49469531 L3.66339726,10.8887188 Z" id="Shape" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" x="21.6800548" y="5.45163281" width="3.48676712" height="3.47957422"></rect>
+                        <rect id="Rectangle" x="14.7046027" y="5.45163281" width="3.48638356" height="3.47957422"></rect>
+                        <rect id="Rectangle" x="7.7320274" y="5.45163281" width="3.48638356" height="3.47957422"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#43D3E8" x="28.636137" y="39.2930234" width="47.6475616" height="51.1707383"></rect>
+                    <g id="Group" fill="#242D3C">
+                        <rect id="Rectangle" x="33.2854795" y="42.6060742" width="8.39041096" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="41.6710959" y="54.341" width="9.01983562" height="3.47957422"></rect>
+                        <rect id="Rectangle" x="41.6710959" y="60.2014766" width="9.01983562" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="41.6710959" y="77.7972617" width="9.01983562" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="41.6710959" y="83.6625234" width="9.01983562" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="33.2854795" y="48.4707617" width="17.4089041" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="33.2854795" y="66.0715234" width="8.39041096" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="33.2854795" y="71.932" width="17.4089041" height="3.47957422"></rect>
+                        <rect id="Rectangle" x="54.2248767" y="54.341" width="9.02232877" height="3.47957422"></rect>
+                        <rect id="Rectangle" x="54.2248767" y="60.2014766" width="17.4117808" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="54.2248767" y="48.4707617" width="9.02232877" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="54.2248767" y="77.8022383" width="9.02232877" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="54.2248767" y="83.6675" width="17.4117808" height="3.47995703"></rect>
+                        <rect id="Rectangle" x="54.2248767" y="71.932" width="9.02232877" height="3.47957422"></rect>
+                        <polygon id="Path" points="17.5949315 87.5610859 10.6217808 87.5610859 10.6217808 10.4389141 73.3782192 10.4389141 73.3782192 17.3984453 69.8918356 17.3984453 69.8918356 13.9184883 14.1081644 13.9184883 14.1081644 84.0815117 17.5949315 84.0815117"></polygon>
+                        <polygon id="Path" points="7.1350137 77.1219805 0.162438356 77.1219805 0.162438356 0 62.9186849 0 62.9186849 6.95953125 59.4324932 6.95953125 59.4324932 3.47995703 3.64882192 3.47995703 3.64882192 73.6425977 7.1350137 73.6425977"></polygon>
+                        <polygon id="Path" points="83.8375616 8.69903125 80.3511781 8.69903125 80.3511781 3.47995703 75.1215068 3.47995703 75.1215068 0 83.8375616 0"></polygon>
+                        <polygon id="Path" points="8.87849315 98 0.162438356 98 0.162438356 89.3000117 3.64882192 89.3000117 3.64882192 94.520043 8.87849315 94.520043"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
