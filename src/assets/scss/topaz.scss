@@ -329,7 +329,7 @@ input {
 	@include breakpoint(xxsmalltomedium) {
 	  font-size: 1.75em;
 	  color: #202020;
-	  margin: .25em 1em 2.5em 1em;
+	  margin: 1.25em 1em 2.5em 1em;
 		span {
 			font-size: 1.5em;
 		  color: #498C8A;
@@ -341,18 +341,19 @@ input {
 
 .features__colorblock--amber {
 	background-color: _palette(amber);
-	padding: 3em 5em .65em 4em;
+	padding: 3em 22em .65em 4em;
 	position: relative;
 	margin: 3em 0 2em 0;
 	@include breakpoint(xxsmalltomedium) {
-		padding: 3em 3em 1em 1em;
+		padding: 3em 9em 1em 1em;
 		margin: 3em 0 2em 0;
 	}
 }
 
 .features__colorblock--trans {
 	background-color: transparent;
-	margin: 0 0 12em 0;
+	padding: 1em 18em 1em 2em;
+	margin: 0 0 6em 0;
 	@include breakpoint(xxsmalltomedium) {
 		padding: .25em 9em 1em 1em;
 		margin: 0 0 6em 0;
@@ -367,14 +368,26 @@ input {
 	}
 }
 
+.features__paragraph--dark-larger {
+	font-size: 2.25em;
+	font-weight: 800;
+  color: #202020;
+	@include breakpoint(xxsmalltomedium) {
+		font-size: 1.2em;
+	}
+}
+
 
 
 .features__block--shadow {
 	background: #FFFFFF;
 	box-shadow: 0 32px 64px 0 rgba(0,0,0,0.16);
-	padding: 3em 2em;
-	margin: 2em 0 4em;
+	padding: 3em 1.5em;
+	margin: 4em 0 4em;
 	text-align: center;
+	@include breakpoint(xxsmalltomedium) {
+		margin: 6em 1em;
+	}
 }
 
 .features__block--shadow h4, p {
