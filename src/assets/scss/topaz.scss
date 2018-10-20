@@ -87,12 +87,24 @@ input {
 	border-radius: 4px;
 }
 
-.body {
-	// background-color: red;
+body {
+	// background: red;
 	background-color: #FAFAFA;
 	// background: linear-gradient(226deg, #83D0F1 0%, #208DB0 50%);
 	// background-image: linear-gradient(-180deg, #FAFAFA 88%, #EFEFEF 100%);
 	// background: linear-gradient(-180deg, #FAFAFA 88%, #EFEFEF 100%);
+	// background-image: url(../images/body-bg.svg);
+	// background-size: cover;
+}
+
+.body {
+	// background-color: red;
+	// background-color: #000;
+	// background: linear-gradient(226deg, #83D0F1 0%, #208DB0 50%);
+	// background-image: linear-gradient(-180deg, #FAFAFA 88%, #EFEFEF 100%);
+	// background: linear-gradient(-180deg, #FAFAFA 88%, #EFEFEF 100%);
+	background: url(../images/body-bg.svg);
+	background-size: cover;
 }
 .bgtest {
 	height: 50vw;
