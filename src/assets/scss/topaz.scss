@@ -341,7 +341,7 @@ input {
 .features__colorblock--trans {
 	background-color: transparent;
 	padding: 1em 9em 1em 1em;
-	margin: 0 0 6em 0;
+	margin: 0 0 12em 0;
 }
 
 .features__paragraph--dark {
@@ -350,12 +350,6 @@ input {
   // margin-bottom: 2.75em;
   // padding: 1em;
   // line-height: 1.25em;
-}
-
-.features__block--shadow:nth-of-type(1) {
-	@include breakpoint(xxsmalltomedium) {
-		margin-top: 8em;
-	}
 }
 
 .features__block--shadow {
