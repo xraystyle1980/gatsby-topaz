@@ -5,7 +5,7 @@ import IconMedium from '../assets/images/icon-medium.svg';
 import IconTwitter from '../assets/images/icon-twitter.svg';
 
 const Navigation = () => (
-  <header className="topaz-header">
+  <header className="header__navigation">
     <div className="grid-wrapper">
       <div className="col-6 logo">
         <a href="#home"><img src={logo} alt="Topaz" /></a>

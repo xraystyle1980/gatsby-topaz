@@ -167,6 +167,10 @@ body {
 	padding: 0 1em;
 }
 
+.header__navigation {
+	margin: 1.25em 0;
+}
+
 .logo {
 	text-align: left;
 }
@@ -223,7 +227,7 @@ body {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 800;
   padding: .75em 15px;
-  // line-height: 1.85em;
+  line-height: 1.85em;
   font-size: 1em;
   color: #fff;
   text-decoration: none;
