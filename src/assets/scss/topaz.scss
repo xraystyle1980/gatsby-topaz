@@ -49,14 +49,54 @@
 	boxModel: 'border',
 ));
 
+// @import "~sass-rhythm";
 
 
-
-
+@import '../../../node_modules/shevy/core/shevy';
+@include headings;
+@include body;
+@include content;
 
 /*
 	2. Elements...............  html, body, heading, footer, and paragraph, input, links, images
 */
+// $sass-rhythm: 6;
+// $sass-rhythm-root-font-size: 16px;
+// html {
+//   font-size: sass-rhythm-relative-root-font-size();
+// }
+//
+// body {
+//   line-height: sass-rhythm(6);
+// }
+//
+// p,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin: 0 0 sass-rhythm(2);
+// }
+//
+// h1 {
+//   line-height: sass-rhythm(8);
+// }
+// h2 {
+//   line-height: sass-rhythm(6);
+// }
+// h3 {
+//   line-height: sass-rhythm(4);
+// }
+// h4 {
+//   line-height: sass-rhythm(4);
+// }
+
+
+
+
+
 html, body {
   margin: 0;
   height: 100%;
@@ -211,7 +251,7 @@ input {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 800;
   padding: .75em 15px;
-  line-height: 1.85em;
+  // line-height: 1.85em;
   font-size: 1em;
   color: #fff;
   text-decoration: none;
@@ -233,7 +273,7 @@ input {
 	font-size: 1em;
 	padding: 0 2em;
 	height: 72px;
-	color: #AAB2B5;
+	color: #202020;
 	border: none;
 	box-shadow: 0 16px 64px 0 rgba(0,0,0,0.24);
 }
@@ -277,7 +317,7 @@ input {
 
 .signup__label {
 	font-size: 1.625em;
-	line-height: 1.25em;
+	// line-height: 1.25em;
 }
 
 .home__header--white {
@@ -295,14 +335,44 @@ input {
   color: #FFF;
   margin-bottom: 2.75em;
   padding-top: 1em;
-  line-height: 1.25em;
+  // line-height: 1.25em;
 }
 .hero__paragraph--white strong {
 	font-weight: 800;
 }
 
 .features__hero--home {
-	padding: 10em 0 4em 0;
+	padding: 4em 0 4em 0;
+	// background-image: url('../images/features-multi-graphic.svg');
+	background-repeat: no-repeat;
+	background-position: top 10% right -50%;
+}
+
+.features__headline--dark {
+  font-size: 1.75em;
+  color: #202020;
+  margin-bottom: 2.75em;
+  padding-top: 1em;
+  // line-height: 1.35em;
+}
+
+.features__colorblock--amber {
+	background-color: _palette(amber);
+}
+
+.features__paragraph--dark {
+	font-size: 1.45em;
+  color: #202020;
+  margin-bottom: 2.75em;
+  padding: 1em;
+  // line-height: 1.25em;
+}
+
+.features__block--shadow {
+	background: #FFFFFF;
+	box-shadow: 0 32px 64px 0 rgba(0,0,0,0.16);
+	padding: 3em 2em;
+	margin: 2em 0;
 }
 
 .topaz-header {
@@ -311,10 +381,7 @@ input {
 
 
 
-.bodyctatemp {
-	background-image: linear-gradient(-224deg, #00EAFF 0%, #0064ED 100%);
-	padding: 4em 0 0 0;
-}
+
 
 /* Screen reader only */
 .sr-only {

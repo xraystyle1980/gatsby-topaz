@@ -1,0 +1,88 @@
+import React from 'react'
+import addToMailchimp from 'gatsby-plugin-mailchimp';
+
+export default class IndexPage extends React.Component {
+  state = {
+    name: null,
+    email: null,
+  }
+
+  _handleChange = e => {
+    console.log({
+      [`${e.target.name}`]: e.target.value,
+    })
+    this.setState({
+      [`${e.target.name}`]: e.target.value,
+    })
+  }
+
+  _handleSubmit = e => {
+    e.preventDefault();
+    console.log('submit', this.state)
+    addToMailchimp(this.state.email, {name: this.state.name})
+    .then(({msg, result}) => {
+      console.log('msg', '${result}: ${msg}');
+      if (result.result !== `success`) {
+        this.setState({
+          status: `error`,
+          msg: result.msg,
+        })
+      } else {
+        // Email address succesfully subcribed to Mailchimp
+        this.setState({
+          status: `success`,
+          msg: result.msg,
+        })
+      }
+    })
+    .catch(err => {
+      // Network failures, timeouts, etc
+      this.setState({
+        status: `error`,
+        msg: err,
+      })
+    })
+  }
+
+
+  _handleFormSubmit = e => {
+      e.preventDefault()
+      e.stopPropagation()
+
+      this.setState({
+          status: `sending`,
+          msg: null,
+        },
+        // setState callback (subscribe email to MC)
+        this._postEmailToMailchimp(this.state.email, {
+          pathname: document.location.pathname,
+        })
+      )
+    }
+
+
+      render() {
+        return (
+          <div>
+            {this.state.status === `success` ? (
+              <div>Thank you! Youʼll receive your first email shortly.</div>
+            ) : (
+              <div>
+                <p>Enjoyed this post? Receive the next one in your inbox!</p>
+                <form onSubmit={this._handleSubmit} className="form__signup--inline">
+                  <div>
+                    <input type="email" onChange={this._handleChange} placeholder="&#xf0e0; &nbsp;Email" name="email" />
+                    <input type="submit" value="Sign Up" />
+                    {this.state.status === `error` && (
+                      <div
+                        dangerouslySetInnerHTML={{ __html: this.state.msg }}
+                      />
+                    )}
+                  </div>
+                </form>
+              </div>
+            )}
+          </div>
+        )
+      }
+    }
