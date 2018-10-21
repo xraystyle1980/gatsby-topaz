@@ -28,29 +28,28 @@ class Homepage extends React.Component {
                 />
 
                   <section  className="features__hero--home">
+
+
                     <div className="container">
                       <div className="grid-wrapper">
-
-
                         <div className="col-12">
                           <h2 className="features__headline--dark"><span>Add the value</span> of complex blockchain applications seamlessly to your existing technology stack.</h2>
                         </div>
-
-
-
-
-
                         <div className="col-12">
-                          <div className="features__colorblock--amber">
-                            <p className="features__paragraph--dark">Topaz arranges your data and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
+                          <div className="features__colorblock--night">
+                            <p className="features__paragraph--light">Topaz arranges your data and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
                             <img src={FeaturesMultiGraphic} alt="Topaz" className="features__image--multigraphic" />
                           </div>
                           <div className="features__colorblock--trans">
                             <p className="features__paragraph--dark-larger">You can now query and furnish your data, and provide proof of existence and chain of custody over time.</p>
                           </div>
                         </div>
+                      </div>
+                    </div>
 
 
+                    <div className="container features__block">
+                      <div className="grid-wrapper">
                         <div className="col-4">
                           <div className="features__block--shadow">
                             <img src={iconEfficient} alt="Efficient" className="features__image--icon" />
@@ -72,11 +71,10 @@ class Homepage extends React.Component {
                             <p>Generate reports on the data you store on blockchain.</p>
                           </div>
                         </div>
-
-
-
                       </div>
                     </div>
+
+
                   </section>
 
 

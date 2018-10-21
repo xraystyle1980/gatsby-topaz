@@ -94,8 +94,8 @@ body {
 }
 
 .body {
-	background: url(../images/body-bg.svg);
-	background-size: cover;
+	// background: url(../images/body-bg.svg);
+	// background-size: cover;
 }
 
 .header__background--gradient {
@@ -258,8 +258,8 @@ body {
 	@include vendor('appearance', 'none');
 	@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
 	width: 100%;
-	background-color: _palette(amber);
-	color: _palette(amber-contrast);
+	background-color: _palette(topaz-night);
+	color: _palette(topaz-night-contrast);
 	cursor: pointer;
 	display: inline-block;
 	padding: 0 1em;
@@ -273,7 +273,7 @@ body {
 	text-transform: uppercase;
 
 	&:hover {
-		background-color: _palette(amber-hover);
+		background-color: _palette(topaz-night-hover);
 	}
 
 	&:active {
@@ -322,9 +322,9 @@ body {
 }
 
 .features__headline--dark {
-  font-size: 3.5em;
+  font-size: 3.125em;
   color: #202020;
-  margin: .75em 2.65em;
+  margin: .75em 3.2em 1.5em 3.2em;
 	span {
 	  color: #00A6E2;
 	}
@@ -342,6 +342,17 @@ body {
 
 .features__colorblock--amber {
 	background-color: _palette(amber);
+	padding: 3em 22em .65em 4em;
+	position: relative;
+	margin: 3em 0 2em 0;
+	@include breakpoint(xxsmalltomedium) {
+		padding: 3em 9em 1em 1em;
+		margin: 3em 0 2em 0;
+	}
+}
+
+.features__colorblock--night {
+	background-color: _palette(topaz-light-blue);
 	padding: 3em 22em .65em 4em;
 	position: relative;
 	margin: 3em 0 2em 0;
@@ -378,7 +389,35 @@ body {
 	}
 }
 
+.features__paragraph--light {
+	font-size: 2em;
+  color: _palette(topaz-night-contrast);
+	@include breakpoint(xxsmalltomedium) {
+		font-size: 1em;
+	}
+}
 
+.features__paragraph--light-larger {
+	font-size: 2.25em;
+	font-weight: 800;
+  color: _palette(topaz-light-blue);
+	@include breakpoint(xxsmalltomedium) {
+		font-size: 1.2em;
+	}
+}
+
+.features__block {
+	// margin: 8em 0 4em 0;
+	padding: 12em 0 2em 0;
+	background: url(../images/body-bg-top-angle.svg);
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+	@include breakpoint(xxsmalltomedium) {
+		margin: 6em 0 0 0;
+		padding: 4em 1em;
+	}
+}
 
 .features__block--shadow {
 	background: #FFFFFF;
