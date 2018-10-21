@@ -161,7 +161,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: top -4em right -18em;
 	@include breakpoint(xxsmalltomedium) {
-		background-position: top 4em center;
+		background-position: top 0 center;
 	}
 }
 
@@ -173,7 +173,15 @@ body {
 	3. Objects................  containers, layout
 */
 .container {
-	padding: 0 1em;
+	padding: 2em 1em;
+	&--blue {
+		background-color: _palette(topaz-light-blue);
+		padding: 2em 1em;
+		margin: 2em 0;
+		@include breakpoint(xxsmalltomedium) {
+			margin: 0;
+		}
+	}
 }
 
 .header__navigation {
@@ -349,18 +357,39 @@ body {
 
 
 
-.features__colorblock--amber {
-	background-color: _palette(amber);
-	padding: 3em 22em .65em 4em;
+// .features__colorblock--amber {
+// 	background-color: _palette(amber);
+// 	padding: 3em 22em .65em 4em;
+// 	position: relative;
+// 	margin: 3em 0 2em 0;
+// 	@include breakpoint(xxsmalltomedium) {
+// 		padding: 3em 9em 1em 1em;
+// 		margin: 3em 0 2em 0;
+// 	}
+// }
+//
+// .features__colorblock--light-blue {
+// 	background-color: _palette(topaz-light-blue);
+// 	padding: 3em 22em .65em 4em;
+// 	position: relative;
+// 	margin: 3em 0 2em 0;
+// 	@include breakpoint(xxsmalltomedium) {
+// 		padding: 3em 9em 1em 1em;
+// 		margin: 3em 0 2em 0;
+// 	}
+// }
+
+.features__colorblock {
+	padding: 3em 22em .65em 0;
 	position: relative;
 	margin: 3em 0 2em 0;
 	@include breakpoint(xxsmalltomedium) {
-		padding: 3em 9em 1em 1em;
-		margin: 3em 0 2em 0;
+		padding: 1em 9em 0 1em;
+		margin: 1em 0 2em 0;
 	}
 }
 
-.features__colorblock--night {
+.features__colorblock--light-blue {
 	background-color: _palette(topaz-light-blue);
 	padding: 3em 22em .65em 4em;
 	position: relative;
@@ -371,14 +400,18 @@ body {
 	}
 }
 
-.features__colorblock--trans {
+.features__block--under {
 	background-color: transparent;
-	padding: 1em 18em 1em 2em;
+	padding: 3em 18em 1em 0;
 	margin: 0 0 6em 0;
 	@include breakpoint(xxsmalltomedium) {
-		padding: .25em 9em 1em 1em;
+		padding: 1em;
 		margin: 0 0 6em 0;
 	}
+}
+
+.colorblock--light-blue {
+	background-color: _palette(topaz-light-blue);
 }
 
 .features__paragraph--dark {
@@ -393,23 +426,29 @@ body {
 	font-size: 2.25em;
 	font-weight: 800;
   color: #202020;
+	span {
+		font-size: 1.35em;
+	}
 	@include breakpoint(xxsmalltomedium) {
 		font-size: 1.2em;
 	}
 }
 
 .features__paragraph--light {
-	font-size: 2em;
+	font-size: 2.25em;
+	font-weight: 800;
   color: _palette(topaz-night-contrast);
+	span {
+		font-size: 1.35em;
+	}
 	@include breakpoint(xxsmalltomedium) {
-		font-size: 1em;
+		font-size: 1.125em;
 	}
 }
 
 .features__paragraph--light-larger {
 	font-size: 2.25em;
 	font-weight: 800;
-  color: _palette(topaz-light-blue);
 	@include breakpoint(xxsmalltomedium) {
 		font-size: 1.2em;
 	}
@@ -417,14 +456,14 @@ body {
 
 .features__block {
 	// margin: 8em 0 4em 0;
-	padding: 12em 0 2em 0;
-	background: url(../images/body-bg-top-angle.svg);
-	background-size: contain;
-	background-position: top center;
-	background-repeat: no-repeat;
+	padding: 0em 0 4em 0;
+	// background: url(../images/body-bg-top-angle.svg);
+	// background-size: contain;
+	// background-position: top center;
+	// background-repeat: no-repeat;
 	@include breakpoint(xxsmalltomedium) {
-		margin: 6em 0 0 0;
-		padding: 4em 1em;
+		// margin: 6em 0 0 0;
+		// padding: 4em 1em;
 	}
 }
 
@@ -452,9 +491,10 @@ body {
 
 .features__image--multigraphic {
 	position: absolute;
-	top: -20%;
+	top: 16%;
 	right: -30%;
-	width: 600px;
+	width: 700px;
+	mix-blend-mode: hue;
 }
 
 @include breakpoint(xxsmalltomedium) {

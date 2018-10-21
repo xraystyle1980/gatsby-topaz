@@ -5,7 +5,7 @@ import Mc from '../components/Mc';
 
 
 import Layout from '../components/layout';
-import FeaturesMultiGraphic from '../assets/images/features-multi-graphic.svg' ;
+import FeaturesMultiGraphic from '../assets/images/features-multi-graphic.png' ;
 import iconEfficient from '../assets/images/icon-efficient.svg' ;
 import iconIntegrate from '../assets/images/icon-integrate.svg' ;
 import iconReporting from '../assets/images/icon-reporting.svg' ;
@@ -36,18 +36,8 @@ class Homepage extends React.Component {
                         <div className="col-12">
                           <h2 className="features__headline--dark"><span>Add the value</span> of complex blockchain applications seamlessly to your existing technology stack.</h2>
                         </div>
-                        <div className="col-12">
-                          <div className="features__colorblock--night">
-                            <p className="features__paragraph--light">Topaz arranges your data and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
-                            <img src={FeaturesMultiGraphic} alt="Topaz" className="features__image--multigraphic" />
-                          </div>
-                          <div className="features__colorblock--trans">
-                            <p className="features__paragraph--dark-larger">You can now query and furnish your data, and provide proof of existence and chain of custody over time.</p>
-                          </div>
-                        </div>
                       </div>
                     </div>
-
 
                     <div className="container features__block">
                       <div className="grid-wrapper">
@@ -74,6 +64,30 @@ class Homepage extends React.Component {
                         </div>
                       </div>
                     </div>
+
+                    <div className="container--blue">
+                      <div className="grid-wrapper">
+                        <div className="col-12">
+                          <div className="features__colorblock">
+                            <p className="features__paragraph--light"><span>Topaz arranges your data</span> and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
+                            <img src={FeaturesMultiGraphic} alt="Topaz" className="features__image--multigraphic" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="container">
+                      <div className="grid-wrapper">
+                        <div className="col-12">
+                          <div className="features__block--under">
+                            <p className="features__paragraph--dark-larger">You can now query and furnish your data, and provide <span>proof of existence and chain of custody</span> over time.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
 
 
                   </section>
