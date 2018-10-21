@@ -35,11 +35,11 @@
 @import "css-grid";
 
 @include skel-breakpoints((
-	xlarge: '(max-width: 1680px)',
+	xlarge: '(min-width: 1281px)',
 	large: '(min-width:981px) and (max-width: 1280px)',
 	medium: '(min-width:737px) and (max-width: 980px)',
-	small: '(max-width: 736px)',
-	xsmall: '(max-width: 480px)',
+	small: '(min-width:481px) and (max-width: 736px)',
+	xsmall: '(min-width: 361px) and (max-width: 480px)',
 	xxsmall: '(min-width:0px) and (max-width: 360px)',
 	xxsmalltomedium: '(min-width:0px) and (max-width: 980px)',
 ));
@@ -175,7 +175,7 @@ body {
 .container {
 	padding: 2em 1em;
 	&--blue {
-		background-color: _palette(topaz-light-blue);
+		background-color: _palette(topaz-dark-blue);
 		padding: 2em 1em;
 		margin: 2em 0;
 		@include breakpoint(xxsmalltomedium) {
@@ -325,13 +325,18 @@ body {
 
 .hero__paragraph--white {
 	font-size: 1.45em;
-  color: #FFF;
+  color: _palette(topaz-night-contrast);
   margin-bottom: 2.75em;
   padding-top: 1em;
-  // line-height: 1.25em;
 }
+
 .hero__paragraph--white strong {
 	font-weight: 800;
+}
+
+.features__paragraph--desc-dark {
+	font-size: 1.45em;
+  color: _palette(topaz-night);
 }
 
 .features__hero--home {
@@ -415,28 +420,32 @@ body {
 }
 
 .features__paragraph--dark {
-	font-size: 2em;
-  color: #202020;
-	@include breakpoint(xxsmalltomedium) {
-		font-size: 1em;
-	}
-}
-
-.features__paragraph--dark-larger {
 	font-size: 2.25em;
-	font-weight: 800;
-  color: #202020;
+	font-weight: 400;
+  color: _palette(topaz-night);
 	span {
 		font-size: 1.35em;
 	}
 	@include breakpoint(xxsmalltomedium) {
-		font-size: 1.2em;
+		font-size: 1.125em;
+	}
+}
+
+.features__paragraph--dark-heavy {
+	font-size: 2.25em;
+	font-weight: 800;
+  color: _palette(topaz-night);
+	span {
+		font-size: 1.35em;
+	}
+	@include breakpoint(xxsmalltomedium) {
+		font-size: 1.125em;
 	}
 }
 
 .features__paragraph--light {
 	font-size: 2.25em;
-	font-weight: 800;
+	font-weight: 400;
   color: _palette(topaz-night-contrast);
 	span {
 		font-size: 1.35em;
@@ -446,11 +455,15 @@ body {
 	}
 }
 
-.features__paragraph--light-larger {
+.features__paragraph--light-heavy {
 	font-size: 2.25em;
 	font-weight: 800;
+  color: _palette(topaz-night-contrast);
+	span {
+		font-size: 1.35em;
+	}
 	@include breakpoint(xxsmalltomedium) {
-		font-size: 1.2em;
+		font-size: 1.125em;
 	}
 }
 
@@ -470,7 +483,7 @@ body {
 .features__block--shadow {
 	background: #FFFFFF;
 	box-shadow: 0 32px 64px 0 rgba(0,0,0,0.16);
-	padding: 3em 1.5em;
+	padding: 3em 1.5em 1em 1.5em;
 	margin: 4em 0 4em;
 	text-align: center;
 	@include breakpoint(xxsmalltomedium) {
