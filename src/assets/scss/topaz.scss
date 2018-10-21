@@ -108,7 +108,7 @@ body {
 	background-size: cover;
 	background-position: top -4em right -18em;
 	@include breakpoint(xxsmalltomedium) {
-		background-position: top -4em center;
+		background-position: top right -32em;
 	}
 }
 
@@ -161,7 +161,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: top -4em right -18em;
 	@include breakpoint(xxsmalltomedium) {
-		background-position: top -4em center;
+		background-position: top 4em center;
 	}
 }
 
