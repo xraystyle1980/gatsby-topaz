@@ -8,21 +8,30 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*
+/*****************************
+******************************
+
 	1. Generic................  imports and resets
 	2. Elements...............  html, body, heading and paragraph, input, links, images
 	3. Objects................  containers, layout
 	4. Components.............  logo, navigation
 	5. Utilities..............  island of misfit classes
-*/
+
+******************************
+*****************************/
 
 
 
 
 
-/*
+/*****************************
+******************************
+
 	1. Generic................  imports and resets
-*/
+
+******************************
+*****************************/
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -39,7 +48,7 @@
 	large: '(min-width:981px) and (max-width: 1280px)',
 	medium: '(min-width:737px) and (max-width: 980px)',
 	small: '(min-width:481px) and (max-width: 736px)',
-	xsmall: '(min-width: 361px) and (max-width: 480px)',
+	xsmall: '(min-width: 0px) and (max-width: 480px)',
 	xxsmall: '(min-width:0px) and (max-width: 360px)',
 	xxsmalltomedium: '(min-width:0px) and (max-width: 980px)',
 ));
@@ -53,9 +62,14 @@
 
 
 
-/*
+/*****************************
+******************************
+
 	2. Elements...............  html, body, heading, footer, and paragraph, input, links, images
-*/
+
+******************************
+*****************************/
+
 @import '../../../node_modules/shevy/core/shevy';
 @include headings;
 @include body;
@@ -89,13 +103,15 @@ input {
 	border-radius: 4px;
 }
 
+a:hover {
+  color: _palette(topaz-night);
+}
+
 body {
 	background-color: #FAFAFA;
 }
 
 .body {
-	// background: url(../images/body-bg.svg);
-	// background-size: cover;
 }
 
 .header__background--gradient {
@@ -169,14 +185,19 @@ body {
 
 
 
-/*
+/*****************************
+******************************
+
 	3. Objects................  containers, layout
-*/
+
+******************************
+*****************************/
+
 .container {
-	padding: 2em 1em;
+	padding: 2em 2em;
 	&--blue {
 		background-color: _palette(topaz-dark-blue);
-		padding: 2em 1em;
+		padding: 2em 2em;
 		margin: 2em 0;
 		@include breakpoint(xxsmalltomedium) {
 			margin: 0;
@@ -202,9 +223,346 @@ body {
 
 
 
-/*
-	4. Components.............  logo, navigation
-*/
+/*****************************
+******************************
+
+4. Components.............  features blocks, forms, logo, navigation
+
+******************************
+*****************************/
+
+.home__header--white {
+	padding: 1em 0;
+}
+
+.hero__headline--white {
+	font-size: 4em;
+	color: #FFF;
+	margin: .125em 0 .125em;
+}
+
+.hero__paragraph--white {
+	font-size: 2.25em;
+  color: _palette(topaz-night-contrast);
+  margin-bottom: 2.75em;
+  padding-top: 1em;
+	@include breakpoint(large) {
+		font-size: 2.25em;
+	}
+	@include breakpoint(medium) {
+		font-size: 2em;
+	}
+	@include breakpoint(small) {
+		font-size: 1.85em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 1.65em;
+	}
+}
+
+.hero__paragraph--white strong {
+	font-weight: 800;
+}
+
+.features__paragraph--desc-dark {
+	font-size: 1.65em;
+  color: _palette(topaz-night);
+	@include breakpoint(large) {
+		font-size: 1.65em;
+	}
+	@include breakpoint(medium) {
+		font-size: 2.125em;
+	}
+	@include breakpoint(small) {
+		font-size: 1.35em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 1.25em;
+	}
+}
+
+.features__header--desc-dark {
+	font-size: 1.65em;
+  color: _palette(topaz-night);
+	@include breakpoint(large) {
+		font-size: 1.65em;
+	}
+	@include breakpoint(medium) {
+		font-size: 2em;
+	}
+	@include breakpoint(small) {
+		font-size: 1.5em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 1.25em;
+	}
+}
+
+.features__hero--home {
+	padding: 4em 0;
+}
+
+.features__headline--dark {
+  font-size: 3.125em;
+  color: #202020;
+  margin: .75em 3.2em 1.5em 3.2em;
+	span {
+	  color: #00A6E2;
+	}
+	@include breakpoint(large) {
+		font-size: 3em;
+	  color: #202020;
+	  margin: 1.25em 1em 2.5em 1em;
+		span {
+			font-size: 1.5em;
+		}
+	}
+	@include breakpoint(medium) {
+		font-size: 2.75em;
+	  color: #202020;
+	  margin: 1.25em 1em 2.5em 1em;
+		span {
+			font-size: 1.5em;
+		}
+	}
+	@include breakpoint(small) {
+		font-size: 2em;
+	  color: #202020;
+	  margin: 1.25em 1em 2.5em 1em;
+		span {
+			font-size: 1.5em;
+		}
+	}
+	@include breakpoint(xsmall) {
+		font-size: 1.75em;
+	  color: #202020;
+	  margin: 1.25em 1em 2.5em 1em;
+		span {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.features__colorblock {
+	padding: 3em 22em .65em 0;
+	position: relative;
+	margin: 3em 0 2em 0;
+	@include breakpoint(large) {
+		padding: 3em 18em 0 0;
+		margin: 1em 0 2em 0;
+	}
+	@include breakpoint(medium) {
+		padding: 3em 14em 0 0;
+		margin: 1em 0 2em 0;
+	}
+	@include breakpoint(small) {
+		padding: 3em 6em 1em 0;
+		margin: 1em 0 2em 0;
+	}
+	@include breakpoint(xsmall) {
+		padding: 1em 1em 0 0;
+		margin: 1em 0 2em 0;
+	}
+}
+
+.features__colorblock--light-blue {
+	background-color: _palette(topaz-light-blue);
+	padding: 3em 22em .65em 4em;
+	position: relative;
+	margin: 3em 0 2em 0;
+	@include breakpoint(xxsmalltomedium) {
+		padding: 3em 9em 1em 1em;
+		margin: 3em 0 2em 0;
+	}
+}
+
+.features__block--under {
+	background-color: transparent;
+	padding: 6em 18em 1em 0;
+	@include breakpoint(xxsmalltomedium) {
+
+	}
+	@include breakpoint(large) {
+		padding: 6em 18em 1em 0;
+	}
+	@include breakpoint(medium) {
+		padding: 6em 0;
+	}
+	@include breakpoint(small) {
+		padding: 4em 0;
+	}
+	@include breakpoint(xsmall) {
+		padding: 3em 0;
+	}
+}
+
+.colorblock--light-blue {
+	background-color: _palette(topaz-light-blue);
+}
+
+.features__paragraph--dark {
+	font-size: 2.25em;
+	font-weight: 400;
+  color: _palette(topaz-night);
+	span {
+		font-size: 1.35em;
+	}
+	@include breakpoint(large) {
+		font-size: 1.85em;
+	}
+	@include breakpoint(medium) {
+		font-size: 2em;
+	}
+	@include breakpoint(small) {
+		font-size: 2em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 1.125em;
+	}
+}
+
+.features__paragraph--dark-heavy {
+	font-size: 2.25em;
+	font-weight: 800;
+  color: _palette(topaz-night);
+	span {
+		font-size: 1.35em;
+	}
+	@include breakpoint(large) {
+		font-size: 1.85em;
+	}
+	@include breakpoint(medium) {
+		font-size: 2em;
+	}
+	@include breakpoint(small) {
+		font-size: 2em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 1.125em;
+	}
+}
+
+.features__paragraph--light {
+	font-size: 2.25em;
+	font-weight: 400;
+  color: _palette(topaz-night-contrast);
+	span {
+		font-size: 1.35em;
+	}
+	@include breakpoint(large) {
+		font-size: 1.85em;
+	}
+	@include breakpoint(medium) {
+		font-size: 2em;
+	}
+	@include breakpoint(small) {
+		font-size: 2em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 1.125em;
+	}
+}
+
+.features__paragraph--light-heavy {
+	font-size: 2.25em;
+	font-weight: 800;
+  color: _palette(topaz-night-contrast);
+	span {
+		font-size: 1.35em;
+	}
+	@include breakpoint(large) {
+		font-size: 1.85em;
+	}
+	@include breakpoint(medium) {
+		font-size: 2em;
+	}
+	@include breakpoint(small) {
+		font-size: 2em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 1.125em;
+	}
+}
+
+.features__block {
+	padding-bottom: 4em;
+	@include breakpoint(xxsmalltomedium) {
+
+	}
+}
+
+.features__block--shadow {
+	background: #FFFFFF;
+	box-shadow: 0 32px 64px 0 rgba(0,0,0,0.16);
+	padding: 3em 1.5em 1em 1.5em;
+	margin: 4em 0 4em;
+	text-align: center;
+	@include breakpoint(large) {
+		margin: 6em 1em;
+	}
+	@include breakpoint(medium) {
+		margin: 6em 1em;
+		padding: 3em 2.5em 1em 2.5em;
+	}
+	@include breakpoint(small) {
+		margin: 6em 1em;
+		padding: 3em 2.5em 1em 2.5em;
+	}
+	@include breakpoint(xsmall) {
+		margin: 6em 1em;
+		padding: 3em 1.5em 1em 1.5em;
+	}
+}
+
+.features__block--shadow h4, p {
+	text-align: left;
+}
+
+.features__image--icon {
+	height: 72px;
+	position: relative;
+	top: -80px;
+	margin-bottom: -60px;
+	@include breakpoint(large) {
+		height: 72px;
+		top: -80px;
+		margin-bottom: -60px;
+	}
+	@include breakpoint(medium) {
+		height: 128px;
+		top: -80px;
+		margin-bottom: -60px;
+		font-size: 2em;
+	}
+	@include breakpoint(small) {
+		height: 72px;
+		top: -80px;
+		margin-bottom: -60px;
+		font-size: 1.85em;
+	}
+	@include breakpoint(xsmall) {
+		height: 72px;
+		top: -80px;
+		margin-bottom: -60px;
+		font-size: 1.65em;
+	}
+}
+
+.features__image--multigraphic {
+	position: absolute;
+	top: 16%;
+	right: -30%;
+	width: 700px;
+	mix-blend-mode: hue;
+}
+
+@include breakpoint(xxsmalltomedium) {
+	.features__image--multigraphic {
+		top: 30%;
+		right: -40%;
+		max-width: 90%;
+	}
+}
 
 .logo a {
 	border-bottom: 0;
@@ -252,7 +610,7 @@ body {
 }
 
 .navlinks__desktop--white:hover {
-  color: _palette(amber-contrast);
+  color: _palette(topaz-night);
 }
 
 .form__signup--inline{
@@ -310,214 +668,50 @@ body {
 
 .signup__label {
 	font-size: 1.625em;
-	// line-height: 1.25em;
-}
-
-.home__header--white {
-	padding: 1em 0;
-}
-
-.hero__headline--white {
-	font-size: 4em;
-	color: #FFF;
-	margin: .125em 0 .125em;
-}
-
-.hero__paragraph--white {
-	font-size: 1.45em;
-  color: _palette(topaz-night-contrast);
-  margin-bottom: 2.75em;
-  padding-top: 1em;
-}
-
-.hero__paragraph--white strong {
-	font-weight: 800;
-}
-
-.features__paragraph--desc-dark {
-	font-size: 1.45em;
-  color: _palette(topaz-night);
-}
-
-.features__hero--home {
-	padding: 4em 0;
-}
-
-.features__headline--dark {
-  font-size: 3.125em;
-  color: #202020;
-  margin: .75em 3.2em 1.5em 3.2em;
-	span {
-	  color: #00A6E2;
-	}
-	@include breakpoint(xxsmalltomedium) {
-	  font-size: 1.75em;
-	  color: #202020;
-	  margin: 1.25em 1em 2.5em 1em;
-		span {
-			font-size: 1.5em;
-		}
-	}
 }
 
 
 
-// .features__colorblock--amber {
-// 	background-color: _palette(amber);
-// 	padding: 3em 22em .65em 4em;
-// 	position: relative;
-// 	margin: 3em 0 2em 0;
-// 	@include breakpoint(xxsmalltomedium) {
-// 		padding: 3em 9em 1em 1em;
-// 		margin: 3em 0 2em 0;
-// 	}
-// }
-//
-// .features__colorblock--light-blue {
-// 	background-color: _palette(topaz-light-blue);
-// 	padding: 3em 22em .65em 4em;
-// 	position: relative;
-// 	margin: 3em 0 2em 0;
-// 	@include breakpoint(xxsmalltomedium) {
-// 		padding: 3em 9em 1em 1em;
-// 		margin: 3em 0 2em 0;
-// 	}
-// }
 
-.features__colorblock {
-	padding: 3em 22em .65em 0;
-	position: relative;
-	margin: 3em 0 2em 0;
-	@include breakpoint(xxsmalltomedium) {
-		padding: 1em 9em 0 1em;
-		margin: 1em 0 2em 0;
-	}
+
+/*****************************
+******************************
+
+5. Utilities..............
+
+******************************
+*****************************/
+
+.breathing-room {
+	padding: 2em;
 }
 
-.features__colorblock--light-blue {
-	background-color: _palette(topaz-light-blue);
-	padding: 3em 22em .65em 4em;
-	position: relative;
-	margin: 3em 0 2em 0;
-	@include breakpoint(xxsmalltomedium) {
-		padding: 3em 9em 1em 1em;
-		margin: 3em 0 2em 0;
-	}
+.white {
+	color: _palette(fg-white);
 }
 
-.features__block--under {
-	background-color: transparent;
-	padding: 3em 18em 1em 0;
-	margin: 0 0 6em 0;
-	@include breakpoint(xxsmalltomedium) {
-		padding: 1em;
-		margin: 0 0 6em 0;
-	}
+.fas {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
 }
 
-.colorblock--light-blue {
-	background-color: _palette(topaz-light-blue);
+.header--blue {
+	color: _palette(topaz-dark-blue);
 }
 
-.features__paragraph--dark {
-	font-size: 2.25em;
-	font-weight: 400;
-  color: _palette(topaz-night);
-	span {
-		font-size: 1.35em;
-	}
-	@include breakpoint(xxsmalltomedium) {
-		font-size: 1.125em;
-	}
-}
 
-.features__paragraph--dark-heavy {
-	font-size: 2.25em;
-	font-weight: 800;
-  color: _palette(topaz-night);
-	span {
-		font-size: 1.35em;
-	}
-	@include breakpoint(xxsmalltomedium) {
-		font-size: 1.125em;
-	}
-}
 
-.features__paragraph--light {
-	font-size: 2.25em;
-	font-weight: 400;
-  color: _palette(topaz-night-contrast);
-	span {
-		font-size: 1.35em;
-	}
-	@include breakpoint(xxsmalltomedium) {
-		font-size: 1.125em;
-	}
-}
 
-.features__paragraph--light-heavy {
-	font-size: 2.25em;
-	font-weight: 800;
-  color: _palette(topaz-night-contrast);
-	span {
-		font-size: 1.35em;
-	}
-	@include breakpoint(xxsmalltomedium) {
-		font-size: 1.125em;
-	}
-}
 
-.features__block {
-	// margin: 8em 0 4em 0;
-	padding: 0em 0 4em 0;
-	// background: url(../images/body-bg-top-angle.svg);
-	// background-size: contain;
-	// background-position: top center;
-	// background-repeat: no-repeat;
-	@include breakpoint(xxsmalltomedium) {
-		// margin: 6em 0 0 0;
-		// padding: 4em 1em;
-	}
-}
 
-.features__block--shadow {
-	background: #FFFFFF;
-	box-shadow: 0 32px 64px 0 rgba(0,0,0,0.16);
-	padding: 3em 1.5em 1em 1.5em;
-	margin: 4em 0 4em;
-	text-align: center;
-	@include breakpoint(xxsmalltomedium) {
-		margin: 6em 1em;
-	}
-}
 
-.features__block--shadow h4, p {
-	text-align: left;
-}
+/*****************************
+******************************
 
-.features__image--icon {
-	height: 72px;
-	position: relative;
-	top: -80px;
-	margin-bottom: -60px;
-}
+5. Maybe unused ..............
 
-.features__image--multigraphic {
-	position: absolute;
-	top: 16%;
-	right: -30%;
-	width: 700px;
-	mix-blend-mode: hue;
-}
-
-@include breakpoint(xxsmalltomedium) {
-	.features__image--multigraphic {
-		top: 30%;
-		right: -40%;
-		max-width: 90%;
-	}
-}
-
+******************************
+*****************************/
 
 
 
@@ -697,29 +891,4 @@ body {
     background: none; /* Remove background from off-canvas styling */
     color: #ffbf00;
   }
-}
-
-
-
-
-
-/*
-5. Utilities..............
-*/
-
-.breathing-room {
-	padding: 2em;
-}
-
-.white {
-	color: _palette(fg-white);
-}
-
-.fas {
-  font-family: 'FontAwesome', sans-serif;
-  font-style: normal;
-}
-
-.header--blue {
-	color: _palette(topaz-dark-blue);
 }
