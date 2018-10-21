@@ -104,12 +104,11 @@ body {
 
 .header__background--logo {
 	background-image: url('../images/header-bg-logo.svg');
-	height: 100%;
-	width: 100%;
 	background-repeat: no-repeat;
-	background-position: top 10% right -50%;
+	background-size: cover;
+	background-position: top -4em right -18em;
 	@include breakpoint(xxsmalltomedium) {
-		background-position: top 10% right 100%;
+		background-position: top -4em center;
 	}
 }
 
@@ -156,6 +155,16 @@ body {
 	}
 }
 
+.footer__background--logo {
+	background-image: url('../images/footer-bg-logo.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top -4em right -18em;
+	@include breakpoint(xxsmalltomedium) {
+		background-position: top -4em center;
+	}
+}
+
 
 
 
@@ -168,7 +177,7 @@ body {
 }
 
 .header__navigation {
-	margin: 1.25em 0;
+	padding: 1.25em 0;
 }
 
 .logo {

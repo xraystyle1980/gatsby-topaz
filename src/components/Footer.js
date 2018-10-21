@@ -4,7 +4,7 @@ import Mc from '../components/Mc';
 class Footer extends React.Component {
     render() {
         return (
-            <footer class="footer">
+            <footer class="footer footer__background--logo">
               <div className="container">
                 <div className="grid-wrapper">
                   <div className="col-12">

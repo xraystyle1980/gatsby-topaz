@@ -21,6 +21,7 @@ class Homepage extends React.Component {
                 meta={[
                   { name: 'description', content: '' },
                   { name: 'keywords', content: '' },
+                  { name: 'robots', content: 'noindex, nofollow' },
                 ]}
                 link={[
                   { rel: 'shortcut icon', sizes: '32x32', type: 'image/png', href: `${icon32}` }
