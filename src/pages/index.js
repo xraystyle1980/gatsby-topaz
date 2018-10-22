@@ -9,6 +9,8 @@ import FeaturesMultiGraphic from '../assets/images/features-multi-graphic.png' ;
 import iconEfficient from '../assets/images/icon-efficient.svg' ;
 import iconIntegrate from '../assets/images/icon-integrate.svg' ;
 import iconReporting from '../assets/images/icon-reporting.svg' ;
+import iconArrange from '../assets/images/icon-arrange.svg' ;
+import iconCheck from '../assets/images/icon-check.svg' ;
 
 class Homepage extends React.Component {
     render() {
@@ -69,7 +71,7 @@ class Homepage extends React.Component {
                       <div className="grid-wrapper">
                         <div className="col-12">
                           <div className="features__colorblock">
-                            <p className="features__paragraph--light-heavy"><span>Topaz arranges your data</span> and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
+                              <p className="features__paragraph--light-heavy"><span><img src={iconArrange} alt="Arrange" className="features__image--icon-small" />Topaz arranges your data</span> and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
                             <img src={FeaturesMultiGraphic} alt="Topaz" className="features__image--multigraphic" />
                           </div>
                         </div>
@@ -80,7 +82,7 @@ class Homepage extends React.Component {
                       <div className="grid-wrapper">
                         <div className="col-12">
                           <div className="features__block--under">
-                            <p className="features__paragraph--dark-heavy">You can now query and furnish your data, and provide <span>proof of existence and chain of custody</span> over time.</p>
+                            <p className="features__paragraph--dark-heavy"><img src={iconCheck} alt="Success" className="features__image--icon-small" />You can now query and furnish your data, and provide <span>proof of existence and chain of custody</span> over time.</p>
                           </div>
                         </div>
                       </div>

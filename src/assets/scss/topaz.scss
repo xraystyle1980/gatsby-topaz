@@ -37,12 +37,9 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import 'libs/angled-edges';
-
 @import url('../css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Source+Sans+Pro:600');
-
 @import "css-grid";
-
 @include skel-breakpoints((
 	xlarge: '(min-width: 1281px)',
 	large: '(min-width:981px) and (max-width: 1280px)',
@@ -52,7 +49,6 @@
 	xxsmall: '(min-width:0px) and (max-width: 360px)',
 	xxsmalltomedium: '(min-width:0px) and (max-width: 980px)',
 ));
-
 @include skel-layout((
 	reset: 'full',
 	boxModel: 'border',
@@ -548,6 +544,11 @@ body {
 	}
 }
 
+.features__image--icon-small {
+	height: 32px;
+	padding-right: 16px;
+}
+
 .features__image--multigraphic {
 	position: absolute;
 	top: 16%;
@@ -621,7 +622,7 @@ body {
   width: 100%;
   margin: .625em 0;
 	background: #FFFFFF;
-	font-size: 1em;
+	font-size: 1.125em;
 	padding: 0 2em;
 	height: 72px;
 	color: #202020;
