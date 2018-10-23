@@ -6,6 +6,8 @@ import Mc from '../components/Mc';
 
 import Layout from '../components/layout';
 import FeaturesMultiGraphic from '../assets/images/features-multi-graphic.png' ;
+import FeaturesBlocks01 from '../assets/images/features-blocks-01.svg' ;
+import FeaturesBlocks02 from '../assets/images/features-blocks-02.svg' ;
 import iconEfficient from '../assets/images/icon-efficient.svg' ;
 import iconIntegrate from '../assets/images/icon-integrate.svg' ;
 import iconReporting from '../assets/images/icon-reporting.svg' ;
@@ -71,8 +73,8 @@ class Homepage extends React.Component {
                       <div className="grid-wrapper">
                         <div className="col-12">
                           <div className="features__colorblock">
-                              <p className="features__paragraph--light-heavy"><span><img src={iconArrange} alt="Arrange" className="features__image--icon-small" />Topaz arranges your data</span> and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
-                            <img src={FeaturesMultiGraphic} alt="Topaz" className="features__image--multigraphic" />
+                              <p className="features__paragraph--light"><span><img src={iconArrange} alt="Arrange" className="features__image--icon-small" />Topaz arranges your data</span> and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
+                              <img src={FeaturesBlocks01} alt="Topaz" className="features__image--blocks01" />
                           </div>
                         </div>
                       </div>
@@ -82,11 +84,14 @@ class Homepage extends React.Component {
                       <div className="grid-wrapper">
                         <div className="col-12">
                           <div className="features__block--under">
-                            <p className="features__paragraph--dark-heavy"><img src={iconCheck} alt="Success" className="features__image--icon-small" />You can now query and furnish your data, and provide <span>proof of existence and chain of custody</span> over time.</p>
+                          <img src={FeaturesBlocks02} alt="Topaz" className="features__image--blocks02" />
+                            <p className="features__paragraph--dark"><img src={iconCheck} alt="Success" className="features__image--icon-small" />You can now query and furnish your data, and provide <span>proof of existence and chain of custody</span> over time.</p>
                           </div>
                         </div>
                       </div>
                     </div>
+
+                    
 
 
 

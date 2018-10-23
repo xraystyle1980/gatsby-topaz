@@ -216,7 +216,20 @@ body {
 }
 
 
+.aClass {
+  animation: slideIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
 
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-20rem, 0, 500rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 
 /*****************************
@@ -238,18 +251,18 @@ body {
 }
 
 .hero__paragraph--white {
-	font-size: 2.25em;
+	font-size: 1.75em;
   color: _palette(topaz-night-contrast);
   margin-bottom: 2.75em;
   padding-top: 1em;
 	@include breakpoint(large) {
-		font-size: 2.25em;
+		font-size: 1.75em;
 	}
 	@include breakpoint(medium) {
-		font-size: 2em;
+		font-size: 1.75em;
 	}
 	@include breakpoint(small) {
-		font-size: 1.85em;
+		font-size: 1.75em;
 	}
 	@include breakpoint(xsmall) {
 		font-size: 1.65em;
@@ -340,7 +353,7 @@ body {
 }
 
 .features__colorblock {
-	padding: 3em 22em .65em 0;
+	padding: 3em 20em .65em 0;
 	position: relative;
 	margin: 3em 0 2em 0;
 	@include breakpoint(large) {
@@ -348,15 +361,15 @@ body {
 		margin: 1em 0 2em 0;
 	}
 	@include breakpoint(medium) {
-		padding: 3em 14em 0 0;
+		padding: 3em 0 0 0;
 		margin: 1em 0 2em 0;
 	}
 	@include breakpoint(small) {
-		padding: 3em 6em 1em 0;
+		padding: 3em 0 1em 0;
 		margin: 1em 0 2em 0;
 	}
 	@include breakpoint(xsmall) {
-		padding: 1em 1em 0 0;
+		padding: 1em 0 0 0;
 		margin: 1em 0 2em 0;
 	}
 }
@@ -374,12 +387,12 @@ body {
 
 .features__block--under {
 	background-color: transparent;
-	padding: 6em 18em 1em 0;
+	padding: 8em 0 1em 0;
 	@include breakpoint(xxsmalltomedium) {
 
 	}
 	@include breakpoint(large) {
-		padding: 6em 18em 1em 0;
+		padding: 6em 0 1em 0;
 	}
 	@include breakpoint(medium) {
 		padding: 6em 0;
@@ -402,6 +415,7 @@ body {
   color: _palette(topaz-night);
 	span {
 		font-size: 1.35em;
+		font-weight: 800;
 	}
 	@include breakpoint(large) {
 		font-size: 1.85em;
@@ -444,6 +458,7 @@ body {
   color: _palette(topaz-night-contrast);
 	span {
 		font-size: 1.35em;
+		font-weight: 800;
 	}
 	@include breakpoint(large) {
 		font-size: 1.85em;
@@ -565,6 +580,44 @@ body {
 	}
 }
 
+.features__image--blocks01 {
+	position: absolute;
+	top: -12%;
+  right: -12%;
+  width: 420px;
+	@include breakpoint(large) {
+		top: -32%;
+	  right: 0%;
+	  width: 300px;
+	}
+	@include breakpoint(medium) {
+		display: none;
+	}
+	@include breakpoint(small) {
+		display: none;
+	}
+	@include breakpoint(xsmall) {
+		display: none;
+	}
+}
+
+.features__image--blocks02 {
+	float: left;
+  width: 420px;
+	padding: 1em 3em 2em 0;
+	@include breakpoint(large) {
+	}
+	@include breakpoint(medium) {
+		display: none;
+	}
+	@include breakpoint(small) {
+		display: none;
+	}
+	@include breakpoint(xsmall) {
+		display: none;
+	}
+}
+
 .logo a {
 	border-bottom: 0;
 }
@@ -608,6 +661,8 @@ body {
   color: #fff;
   text-decoration: none;
 	text-transform: uppercase;
+	position: relative;
+	top: 5px;
 }
 
 .navlinks__desktop--white:hover {
