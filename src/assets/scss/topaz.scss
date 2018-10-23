@@ -387,12 +387,13 @@ body {
 
 .features__block--under {
 	background-color: transparent;
-	padding: 8em 0 1em 0;
+	padding: 8em 0 1em 16em;
+	position: relative;
 	@include breakpoint(xxsmalltomedium) {
 
 	}
 	@include breakpoint(large) {
-		padding: 6em 0 1em 0;
+		padding: 6em 0 1em 16em;
 	}
 	@include breakpoint(medium) {
 		padding: 6em 0;
@@ -410,7 +411,7 @@ body {
 }
 
 .features__paragraph--dark {
-	font-size: 2.25em;
+	font-size: 2em;
 	font-weight: 400;
   color: _palette(topaz-night);
 	span {
@@ -453,7 +454,7 @@ body {
 }
 
 .features__paragraph--light {
-	font-size: 2.25em;
+	font-size: 2em;
 	font-weight: 400;
   color: _palette(topaz-night-contrast);
 	span {
@@ -586,35 +587,51 @@ body {
   right: -12%;
   width: 420px;
 	@include breakpoint(large) {
-		top: -32%;
-	  right: 0%;
-	  width: 300px;
+		top: -42%;
+	  right: -10%;
+	  width: 380px;
 	}
 	@include breakpoint(medium) {
-		display: none;
+		top: 68%;
+		right: 0;
+		width: 220px;
 	}
 	@include breakpoint(small) {
-		display: none;
+		top: 68%;
+		right: 0;
+		width: 220px;
 	}
 	@include breakpoint(xsmall) {
-		display: none;
+		top: 68%;
+		right: 0;
+		width: 160px;
 	}
 }
 
 .features__image--blocks02 {
-	float: left;
+	position: absolute;
+	top: -6%;
+  left: -22%;
   width: 420px;
-	padding: 1em 3em 2em 0;
 	@include breakpoint(large) {
+		top: -6%;
+	  left: -22%;
+	  width: 420px;
 	}
 	@include breakpoint(medium) {
-		display: none;
+		top: 52%;
+	  left: -10%;
+	  width: 280px;
 	}
 	@include breakpoint(small) {
-		display: none;
+		top: 52%;
+	  left: -10%;
+	  width: 280px;
 	}
 	@include breakpoint(xsmall) {
-		display: none;
+		top: 52%;
+	  left: -10%;
+	  width: 220px;
 	}
 }
 
