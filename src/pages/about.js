@@ -2,7 +2,6 @@ import React from "react";
 import icon32 from '../assets/images/favicon-32x32.png';
 import Helmet from "react-helmet";
 import Mc from '../components/Mc';
-import SEO from '../components/SEO';
 
 
 import Layout from '../components/layout';
@@ -17,13 +16,24 @@ import iconCheck from '../assets/images/icon-check.svg' ;
 
 class Homepage extends React.Component {
     render() {
-        // const siteTitle = "Topaz - Blockchain Simplified";
+        const siteTitle = "Topaz - Blockchain Simplified";
 
         return (
             <Layout>
-              <SEO />
+              <Helmet
+                title="Topaz | Proof of existence in one line of code"
+                meta={[
+                  { name: 'description', content: '' },
+                  { name: 'keywords', content: '' },
+                  { name: 'robots', content: 'noindex, nofollow' },
+                ]}
+                link={[
+                  { rel: 'shortcut icon', sizes: '32x32', type: 'image/png', href: `${icon32}` }
+                ]}
+                />
 
                   <section  className="features__hero--home">
+
 
                     <div className="container">
                       <div className="grid-wrapper">
