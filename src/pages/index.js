@@ -14,6 +14,7 @@ import iconIntegrate from '../assets/images/icon-integrate.svg' ;
 import iconReporting from '../assets/images/icon-reporting.svg' ;
 import iconArrange from '../assets/images/icon-arrange.svg' ;
 import iconCheck from '../assets/images/icon-check.svg' ;
+import iconTrust from '../assets/images/icon-trust.svg' ;
 
 class Homepage extends React.Component {
     render() {
@@ -28,7 +29,7 @@ class Homepage extends React.Component {
                     <div className="container">
                       <div className="grid-wrapper">
                         <div className="col-12">
-                          <h2 className="features__headline--dark"><span>Add the value</span> of complex blockchain applications seamlessly to your existing technology stack.</h2>
+                          <h2 className="features__headline--dark">Integrate with any application without worrying about complex blockchain concepts - no transaction fees, no smart contract development, no cryptocurrencies - <span>just one line of code.</span></h2>
                         </div>
                       </div>
                     </div>
@@ -37,23 +38,23 @@ class Homepage extends React.Component {
                       <div className="grid-wrapper">
                         <div className="col-4">
                           <div className="features__block--shadow">
-                            <img src={iconEfficient} alt="Efficient" className="features__image--icon" />
-                            <h4 className="features__header--desc-dark">EFFICIENT</h4>
-                            <p className="features__paragraph--desc-dark">Store data on Ethereum in the most efficient way possible.</p>
+                            <img src={iconTrust} alt="Efficient" className="features__image--icon" />
+                            <h4 className="features__header--desc-dark">TRUST</h4>
+                            <p className="features__paragraph--desc-dark">Process data at enterprise scale for referencing and securing in any blockchain.</p>
                           </div>
                         </div>
                         <div className="col-4">
                           <div className="features__block--shadow">
                             <img src={iconIntegrate} alt="Integrate" className="features__image--icon" />
-                            <h4 className="features__header--desc-dark">INTEGRATE</h4>
-                            <p className="features__paragraph--desc-dark">Integrate with any existing codebase via first class packages.</p>
+                            <h4 className="features__header--desc-dark">VERIFY</h4>
+                            <p className="features__paragraph--desc-dark">Prove the integrity of data and provide chain of custody over time.</p>
                           </div>
                         </div>
                         <div className="col-4">
                           <div className="features__block--shadow">
                             <img src={iconReporting} alt="Reporting" className="features__image--icon" />
-                            <h4 className="features__header--desc-dark">REPORTING</h4>
-                            <p className="features__paragraph--desc-dark">Generate reports on the data you store on blockchain.</p>
+                            <h4 className="features__header--desc-dark">REPORT</h4>
+                            <p className="features__paragraph--desc-dark">Generate reports to give auditors and customers complete peace of mind.</p>
                           </div>
                         </div>
                       </div>
@@ -63,7 +64,7 @@ class Homepage extends React.Component {
                       <div className="grid-wrapper">
                         <div className="col-12">
                           <div className="features__colorblock">
-                              <p className="features__paragraph--light"><span><img src={iconArrange} alt="Arrange" className="features__image--icon-small" />Topaz arranges your data</span> and performs Ethereum transactions on a set interval to store the data on a blockchain at no cost to you.</p>
+                              <p className="features__paragraph--light"><span><img src={iconArrange} alt="Arrange" className="features__image--icon-small" />Topaz runs alongside any existing application,</span> extracting data and processing it to be referenced and secured by any blockchain - at enterprise scale.</p>
                               <img src={FeaturesBlocks01} alt="Topaz" className="features__image--blocks01" />
                           </div>
                         </div>
@@ -75,7 +76,7 @@ class Homepage extends React.Component {
                         <div className="col-12">
                           <div className="features__block--under">
                           <img src={FeaturesBlocks02} alt="Topaz" className="features__image--blocks02" />
-                            <p className="features__paragraph--dark"><img src={iconCheck} alt="Success" className="features__image--icon-small" />You can now query and furnish your data, and provide <span>proof of existence and chain of custody</span> over time.</p>
+                            <p className="features__paragraph--dark"><img src={iconCheck} alt="Success" className="features__image--icon-small" />For the first time in history, accountability can be applied to any piece of software - at scale. Help <span>revolutionize the way business</span> is conducted from the ground up.</p>
                           </div>
                         </div>
                       </div>

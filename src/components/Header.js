@@ -10,7 +10,7 @@ class Header extends React.Component {
                 <div className="grid-wrapper">
                   <div className="col-12">
                     <h1 className="hero__headline--white">Topaz tells the truth.</h1>
-                    <p className="hero__paragraph--white"><strong>Proof of existence in one line of code.</strong> No transaction fees, no cryptocurrency storage, no smart contract development.</p>
+                    <p className="hero__paragraph--white"><strong>Welcome to the future of commerce,</strong> where transparency is demanded amongst businesses, consumers, and regulators. Powered by blockchain technology, Topaz enforces data integrity at enterprise scale.</p>
                     <div className="col-12">
                       <h2 className="align-center white signup__label">Our developer sandbox is open. Come play.</h2>
                     </div>

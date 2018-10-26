@@ -8,7 +8,7 @@ class Footer extends React.Component {
               <div className="container">
                 <div className="grid-wrapper">
                   <div className="col-12">
-                    <h2 className="align-center white signup__label">Sign up now for developer access.</h2>
+                    <h2 className="align-center white signup__label">Sign up for updates from Topaz.</h2>
                     <Mc />
                     <ul className="footer__socialicons icons">
                       <li><a href="#" className="icon alt fa-medium white"><span className="label">Medium</span></a></li>
