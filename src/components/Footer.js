@@ -4,6 +4,7 @@ import Mc from '../components/Mc';
 class Footer extends React.Component {
     render() {
         return (
+          <div className="header__background--gradient angle--top-left">
             <footer class="footer footer__background--logo">
               <div className="container">
                 <div className="grid-wrapper">
@@ -20,6 +21,7 @@ class Footer extends React.Component {
                 </div>
               </div>
             </footer>
+          </div>
         )
     }
 }

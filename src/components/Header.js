@@ -1,25 +1,21 @@
 import React from 'react';
-import Mc from '../components/Mc';
+import logoTopaz from '../assets/images/logo-topaz.svg' ;
+import Navigation from '../components/Navigation';
+
 
 class Header extends React.Component {
     render() {
         return (
-          <div className="header__background--content">
-            <div className="container">
-              <section className="home__header--white">
-                <div className="grid-wrapper">
-                  <div className="col-12">
-                    <h1 className="hero__headline--white">Topaz tells the truth.</h1>
-                    <p className="hero__paragraph--white"><strong>Welcome to the future of commerce,</strong> where transparency is demanded amongst businesses, consumers, and regulators. Powered by blockchain technology, Topaz enforces data integrity at enterprise scale.</p>
-                    <div className="col-12">
-                      <h2 className="align-center white signup__label">Our developer sandbox is open. Come play.</h2>
-                    </div>
-                    <Mc />
-                  </div>
-                </div>
-              </section>
+          <header className="header__navigation">
+            <div className="grid-wrapper">
+              <div className="col-6 logo">
+                <a href="/"><img src={logoTopaz} alt="Topaz" /></a>
+              </div>
+              <div className="col-6">
+                <Navigation />
+              </div>
             </div>
-          </div>
+          </header>
         )
     }
 }
