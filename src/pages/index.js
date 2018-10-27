@@ -4,6 +4,8 @@ import Helmet from "react-helmet";
 import Mc from '../components/Mc';
 import SEO from '../components/SEO';
 
+import Header from "../components/Header";
+
 
 import Layout from '../components/layout';
 import FeaturesMultiGraphic from '../assets/images/features-multi-graphic.png' ;
@@ -22,10 +24,30 @@ class Homepage extends React.Component {
 
         return (
             <Layout>
+
               <SEO />
-
+              <div className="header__background--gradient angle--bottom-right">
+                <div className="header__background--logo">
+                  <Header />
+                  <div className="header__background--content">
+                    <div className="container">
+                      <section className="home__header--white">
+                        <div className="grid-wrapper">
+                          <div className="col-12">
+                            <h1 className="hero__headline--white">Topaz tells the truth.</h1>
+                            <p className="hero__paragraph--white"><strong>Welcome to the future of commerce,</strong> where transparency is demanded amongst businesses, consumers, and regulators. Powered by blockchain technology, Topaz enforces data integrity at enterprise scale.</p>
+                            <div className="col-12">
+                              <h2 className="align-center white signup__label">Our developer sandbox is open. Come play.</h2>
+                            </div>
+                            <Mc />
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
                   <section  className="features__hero--home">
-
                     <div className="container">
                       <div className="grid-wrapper">
                         <div className="col-12">
