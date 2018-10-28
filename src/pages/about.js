@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import Mc from '../components/Mc';
 import SEO from '../components/SEO';
 
-import Header from "../components/Header";
+import Navigation from '../components/Navigation';
 
 
 import Layout from '../components/layout';
@@ -35,7 +35,7 @@ class Homepage extends React.Component {
               <SEO />
               <div className="header__background--gradient angle--bottom-right">
                 <div className="header__background--gradient-about-photo">
-                  <Header />
+                  <Navigation />
                   <div className="header__background--content">
                     <div className="container">
                       <div className="grid-wrapper">
