@@ -1,8 +1,6 @@
 import React from "react";
 import "../assets/scss/main.scss";
 import "../assets/scss/topaz.scss";
-
-
 import Footer from "./Footer";
 
 class Template extends React.Component {
@@ -30,19 +28,8 @@ class Template extends React.Component {
 
         return (
           <div className={`body ${this.state.loading}`}>
-
-
-
-
-
-
-
             {children}
-
-
-
             <Footer />
-
           </div>
         );
     }
