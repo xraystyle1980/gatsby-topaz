@@ -117,11 +117,8 @@ body {
 }
 
 .header__background--gradient {
-	background-image: url(''), linear-gradient(226deg, _palette(topaz-light-blue) 0%, _palette(topaz-dark-blue) 50%);
-	background-repeat: no-repeat;
-	background-size: cover, cover;
-	background-position: top center, top center;
-	mix-blend-mode: color;
+	background: rgb(0,166,226);
+	background: linear-gradient(226deg, rgba(0,166,226,1) 0%, rgba(0,103,156,1) 100%);
 }
 
 .header__background--gradient-about-photo {
