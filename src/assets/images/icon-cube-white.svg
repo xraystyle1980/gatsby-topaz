@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-cube</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon-cube" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF" stroke-width="1.6">
+            <polygon id="Fill-1" points="0.0864825806 8.080108 13.9854245 16.048048 13.9916181 16.048048 27.8893213 8.080108 13.9854245 0.111553"></polygon>
+            <polygon id="Fill-2" points="13.9913084 16.048294 13.9851148 16.048294 13.9851148 31.992169 27.889631 24.017464 27.889631 8.080354"></polygon>
+            <polygon id="Fill-3" points="0.0864825806 24.017587 13.9854245 31.992292 13.9854245 16.048417 0.0864825806 8.079862"></polygon>
+        </g>
+    </g>
+</svg>
