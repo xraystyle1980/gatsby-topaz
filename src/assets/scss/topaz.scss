@@ -273,6 +273,18 @@ body {
 	font-size: 4em;
 	color: #FFF;
 	margin: .125em 0 .125em;
+	@include breakpoint(large) {
+		font-size: 3.5em;
+	}
+	@include breakpoint(medium) {
+		font-size: 3em;
+	}
+	@include breakpoint(small) {
+		font-size: 2.5em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 2.5em;
+	}
 }
 
 .content__label--white {
@@ -685,12 +697,24 @@ body {
 	right: -16px;
   width: 100%;
 	@include breakpoint(large) {
+		top: 0px;
+		right: 0px;
+	  width: 100%;
 	}
 	@include breakpoint(medium) {
+		top: 0px;
+		right: 0px;
+	  width: 30%;
 	}
 	@include breakpoint(small) {
+		top: 0px;
+		right: 0px;
+	  width: 60%;
 	}
 	@include breakpoint(xsmall) {
+		top: 0px;
+		right: 0px;
+	  width: 80%;
 	}
 }
 
@@ -818,13 +842,27 @@ body {
 }
 
 .logo__decent {
-	margin: 0 2em 3em 0;
-	width: 80px;
+	margin: 0 1.5em 1em 0;
+	width: 68px;
 	float: left;
+}
 
+.blurb__decent {
+	font-size: 1.25em;
+	color: #666;
+	padding: 0 2em;
+}
+
+.blurb__decent strong {
+	font-weight: 800;
 }
 
 
+.photo__decent-group {
+	float: right;
+	padding: 1em;
+	box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
 
 
 /*****************************
