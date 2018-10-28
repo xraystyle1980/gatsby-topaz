@@ -77,6 +77,8 @@ html, body {
 	overflow-x: hidden;
 	overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+	color: _palette(topaz-night);
+	font-size: 16px;
 }
 
 h1,h2 {
@@ -92,6 +94,10 @@ h3,h4,h5,h6 {
 p {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 400;
+}
+
+.paragraph--larger {
+	font-size: 1.35em;
 }
 
 input {
@@ -111,7 +117,13 @@ body {
 }
 
 .header__background--gradient {
-	background: linear-gradient(226deg, _palette(topaz-light-blue) 0%, _palette(topaz-dark-blue) 50%);
+	background: rgb(0,166,226);
+	background: linear-gradient(226deg, rgba(0,166,226,1) 0%, rgba(0,103,156,1) 100%);
+}
+
+.header__background--gradient-about-photo {
+	background: url('../images/annie-spratt-608001-unsplash-blue.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 .header__background--logo {
@@ -119,6 +131,16 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top -4em right -18em;
+	@include breakpoint(xxsmalltomedium) {
+		background-position: top right -32em;
+	}
+}
+
+.header__background--nodes {
+	background-image: url('../images/header-bg-nodes.svg');
+	background-repeat: repeat;
+	background-size: 300px;
+	background-position: top right;
 	@include breakpoint(xxsmalltomedium) {
 		background-position: top right -32em;
 	}
@@ -248,6 +270,33 @@ body {
 	font-size: 4em;
 	color: #FFF;
 	margin: .125em 0 .125em;
+	@include breakpoint(large) {
+		font-size: 3.5em;
+	}
+	@include breakpoint(medium) {
+		font-size: 3em;
+	}
+	@include breakpoint(small) {
+		font-size: 2.5em;
+	}
+	@include breakpoint(xsmall) {
+		font-size: 2.5em;
+	}
+}
+
+.content__label--white {
+	font-size: .8em;
+	color: #FFF;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.content__label--dark {
+	font-size: .8em;
+	color: _palette(topaz-night);
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin: 2em 0;
 }
 
 .hero__paragraph--white {
@@ -309,6 +358,10 @@ body {
 
 .features__hero--home {
 	padding: 4em 0;
+}
+
+.--content--padding {
+	padding: 2em 0 0 0;
 }
 
 .features__headline--dark {
@@ -635,6 +688,48 @@ body {
 	}
 }
 
+.about__image--blocks01 {
+	position: relative;
+	top: 0px;
+	right: -16px;
+  width: 100%;
+	@include breakpoint(large) {
+		top: 0px;
+		right: 0px;
+	  width: 100%;
+	}
+	@include breakpoint(medium) {
+		top: 0px;
+		right: 0px;
+	  width: 30%;
+	}
+	@include breakpoint(small) {
+		top: 0px;
+		right: 0px;
+	  width: 60%;
+	}
+	@include breakpoint(xsmall) {
+		top: 0px;
+		right: 0px;
+	  width: 80%;
+	}
+}
+
+.about__image--blocks02 {
+	position: relative;
+	top: 0px;
+	left: -32px;
+  width: 100%;
+	@include breakpoint(large) {
+	}
+	@include breakpoint(medium) {
+	}
+	@include breakpoint(small) {
+	}
+	@include breakpoint(xsmall) {
+	}
+}
+
 .logo a {
 	border-bottom: 0;
 }
@@ -743,8 +838,28 @@ body {
 	font-size: 1.625em;
 }
 
+.logo__decent {
+	margin: 0 1.5em 1em 0;
+	width: 68px;
+	float: left;
+}
+
+.blurb__decent {
+	font-size: 1.25em;
+	color: #666;
+	padding: 0 2em;
+}
+
+.blurb__decent strong {
+	font-weight: 800;
+}
 
 
+.photo__decent-group {
+	float: right;
+	padding: 1em;
+	box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
 
 
 /*****************************
