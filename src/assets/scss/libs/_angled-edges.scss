@@ -136,7 +136,6 @@
 
 .angle--bottom-right {
   @include angle-edge($angle: 3, $angle-position-y: 'bottom', $angle-position-x: 'right');
-  background-color: yellow;
 }
 
 .angle--both-left-left {
