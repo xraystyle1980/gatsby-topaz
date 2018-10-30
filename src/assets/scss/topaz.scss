@@ -118,7 +118,7 @@ body {
 
 .header__background--gradient {
 	background: rgb(0,166,226);
-	background: linear-gradient(226deg, rgba(0,166,226,1) 0%, rgba(0,103,156,1) 100%);
+	background: linear-gradient(226deg, rgba(0,167,226,1) 0%, rgba(0,102,153,1) 100%);
 }
 
 .header__background--gradient-about-photo {
@@ -369,7 +369,7 @@ body {
   color: #202020;
   margin: .75em 3.2em 1.5em 3.2em;
 	span {
-	  color: #00A6E2;
+	  color: #00A7E2;
 	}
 	@include breakpoint(large) {
 		font-size: 3em;
