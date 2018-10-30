@@ -49,22 +49,22 @@ class Homepage extends React.Component {
               </div>
               <section  className="features__hero--home">
                 <div className="container features__block">
-                  <div className="grid-wrapper">
-                    <div className="col-4">
+                  <div className="grid-wrapper equalHMVWrap eqWrap">
+                    <div className="col-4 equalHMV eq">
                       <div className="features__block--shadow">
                         <img src={iconTrust} alt="Efficient" className="features__image--icon" />
                         <h4 className="features__header--desc-dark">TRUST</h4>
                         <p className="features__paragraph--desc-dark">Embed trust in any data and secure it with any blockchain.</p>
                       </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-4 equalHMV eq">
                       <div className="features__block--shadow">
                         <img src={iconIntegrate} alt="Integrate" className="features__image--icon" />
                         <h4 className="features__header--desc-dark">VERIFY</h4>
                         <p className="features__paragraph--desc-dark">Prove the integrity of data and provide accurate chain of custody of assets over time.</p>
                       </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-4 equalHMV eq">
                       <div className="features__block--shadow">
                         <img src={iconReporting} alt="Reporting" className="features__image--icon" />
                         <h4 className="features__header--desc-dark">REPORT</h4>
@@ -73,7 +73,6 @@ class Homepage extends React.Component {
                     </div>
                   </div>
                 </div>
-
                 <div className="container">
                   <div className="grid-wrapper">
                     <div className="col-12">
@@ -89,8 +88,6 @@ class Homepage extends React.Component {
                     <div className="col-12">
                       <div className="features__colorblock">
                           <p className="features__paragraph--light"><img src={iconArrange} alt="Arrange" className="features__image--icon-small" />Topaz runs alongside <span>any existing software,</span> extracting data and processing it to be trusted and secured.</p>
-
-
                           <img src={FeaturesBlocks01} alt="Topaz" className="features__image--blocks01" />
                       </div>
                     </div>
@@ -107,7 +104,22 @@ class Homepage extends React.Component {
                     </div>
                   </div>
                 </div>
+
               </section>
+
+
+
+              <div class="paddingBlock">
+
+                  <div class="equalHMVWrap eqWrap">
+                    <div class="equalHMV eq">boo <br /> boo</div>
+                    <div class="equalHMV eq">shoo</div>
+                    <div class="equalHMV eq">clue</div>
+
+                  </div>
+
+              </div>
+
             </Layout>
         );
     }
