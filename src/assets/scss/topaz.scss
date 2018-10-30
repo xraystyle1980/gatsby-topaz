@@ -236,6 +236,9 @@ hr {
 			margin: 0;
 		}
 	}
+	&--nav-clear {
+		padding: 12em 2em;
+	}
 }
 
 .header__navigation {
@@ -253,7 +256,7 @@ hr {
 
 @include breakpoint(xxsmalltomedium) {
 	.logo {
-		text-align: center;
+		text-align: left;
 	}
 }
 
@@ -981,33 +984,32 @@ input#nav-toggle[type="checkbox"] + label::before, input#nav-toggle[type="radio"
 #nav-toggle {
   ~ label {
 
+    // Nice bouncy transition
+    transition: .5s transform;
+    transition-timing-function: cubic-bezier(.38,.52,.37,1.27);
 
-	    // Nice bouncy transition
-	    transition: .5s transform;
-	    transition-timing-function: cubic-bezier(.38,.52,.37,1.27);
-
-	    // Styling
-	    background-color: white;
-	    padding: 15px 0;
-	    border: 1px solid grey;
-	    border-radius: 3px;
-	    width: 100px;
-	    text-align: center;
-			@include breakpoint(xlarge) {
-				display: none;
-			}
-			@include breakpoint(large) {
-				display: none;
-			}
-			@include breakpoint(medium) {
-				display: block;
-			}
-			@include breakpoint(small) {
-				display: block;
-			}
-			@include breakpoint(xsmall) {
-				display: block;
-			}
+    // Styling
+    background-color: white;
+    padding: 15px 0;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 100px;
+    text-align: center;
+		@include breakpoint(xlarge) {
+			display: none;
+		}
+		@include breakpoint(large) {
+			display: none;
+		}
+		@include breakpoint(medium) {
+			display: block;
+		}
+		@include breakpoint(small) {
+			display: block;
+		}
+		@include breakpoint(xsmall) {
+			display: block;
+		}
   }
 }
 

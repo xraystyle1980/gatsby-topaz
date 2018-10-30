@@ -35,9 +35,8 @@ class Homepage extends React.Component {
               <Header />
               <div className="header__background--gradient angle--bottom-right">
                 <div className="header__background--gradient-about-photo">
-
                   <div className="header__background--content">
-                    <div className="container">
+                    <div className="container--nav-clear">
                       <div className="grid-wrapper">
                         <div className="col-2"></div>
                         <div className="col-8 align-center"><img src={iconCubeWhite} alt="Topaz" className="" />

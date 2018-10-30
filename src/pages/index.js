@@ -29,9 +29,8 @@ class Homepage extends React.Component {
               <Header />
               <div className="header__background--gradient angle--bottom-right">
                 <div className="header__background--logo">
-
                   <div className="header__background--content">
-                    <div className="container">
+                    <div className="container--nav-clear">
                       <section className="home__header--white">
                         <div className="grid-wrapper">
                           <div className="col-12">
