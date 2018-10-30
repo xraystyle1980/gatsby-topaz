@@ -24,8 +24,8 @@ class Homepage extends React.Component {
 
         return (
             <Layout>
-
               <SEO />
+              
               <Header />
               <div className="header__background--gradient angle--bottom-right">
                 <div className="header__background--logo">

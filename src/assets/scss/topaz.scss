@@ -237,7 +237,7 @@ hr {
 		}
 	}
 	&--nav-clear {
-		padding: 12em 2em;
+		padding: 10em 2em;
 	}
 }
 
@@ -1012,7 +1012,12 @@ input#nav-toggle[type="checkbox"] + label::before, input#nav-toggle[type="radio"
 		}
   }
 }
-
+.--overlay {
+	background-color: red;
+	width: 100vw;
+	height: 100vh;
+	// position: absolute;
+}
 #nav-toggle:checked {
   ~ label {
 	  // Active styles
@@ -1032,7 +1037,15 @@ input#nav-toggle[type="checkbox"] + label::before, input#nav-toggle[type="radio"
 	  // Slides the nav out
 	  transform: translateX(-100vw);
   }
+	~ .--overlay {
+		background-color: red;
+		width: 100vw;
+		height: 100vh;
+		display: block;
+	}
+
 }
+
 
 
 .menu {
