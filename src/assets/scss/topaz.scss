@@ -910,7 +910,7 @@ hr {
 /*****************************
 ******************************
 
-6. Mobile Menu ..............
+6. Mobile Menu ..............  based on https://codepen.io/brob/pen/oeNdbg
 
 ******************************
 *****************************/
@@ -928,28 +928,54 @@ $flyout: 250px; // reusable width. In practice on mobile, I use VWs
   display: none;
 }
 
+input#nav-toggle[type="checkbox"] + label::before, input#nav-toggle[type="radio"] + label::before {
+  background: none;
+  border: 0;
+  content: '';
+  display: inline-block;
+  height: 1.65em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 0;
+}
+
 .menu {
   position: fixed;
   top: 0;
   height: 100%;
-  width: $flyout;
+
 	@include breakpoint(xlarge) {
 		position: relative;
 		right: 0;
+		width: 100%;
 	}
 	@include breakpoint(large) {
 		position: relative;
 		right: 0;
+		width: 100%;
 	}
 	@include breakpoint(medium) {
 		right: -100%;
+		width: $flyout;
 	}
 	@include breakpoint(small) {
 		right: -100%;
+		width: $flyout;
 	}
 	@include breakpoint(xsmall) {
 		right: -100%;
+		width: $flyout;
 	}
+}
+
+.ul-menu__outer {
+	display: inline-flex;
+}
+
+.ul-menu__inner-socialicons {
+	display: inline-flex;
 }
 
 #nav-toggle {
@@ -1078,14 +1104,24 @@ $flyout: 250px; // reusable width. In practice on mobile, I use VWs
 	}
 }
 
-
-
 .hamburger {
 	position: absolute;
-	top: 20px;
+	top: -60px;
 	right: 20px;
 	display: inline-block;
-}
-
-.--top {
+	@include breakpoint(xlarge) {
+		top: 20px;
+	}
+	@include breakpoint(large) {
+		top: 20px;
+	}
+	@include breakpoint(medium) {
+		top: -60px;
+	}
+	@include breakpoint(small) {
+		top: -60px;
+	}
+	@include breakpoint(xsmall) {
+		top: -60px;
+	}
 }
