@@ -118,6 +118,15 @@ body {
 	background-color: #FAFAFA;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
 .body {
 }
 
@@ -898,7 +907,6 @@ body {
 
 
 
-
 /*****************************
 ******************************
 
@@ -908,110 +916,140 @@ body {
 *****************************/
 
 
-/*
- * A better looking default horizontal rule
- */
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
 
 $flyout: 250px; // reusable width. In practice on mobile, I use VWs
 
 
 #nav-toggle {
-    // Hides the checkbox
-    position: absolute;
-    opacity: 0;
-    display: none;
-
+  // Hides the checkbox
+  position: absolute;
+  opacity: 0;
+  display: none;
 }
+
 .menu {
-    position: fixed;
-    right: -100%;
-    top: 0;
-
-    height: 100%;
-    width: $flyout;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: $flyout;
+	@include breakpoint(xlarge) {
+		right: 0;
+	}
+	@include breakpoint(large) {
+		right: 0;
+	}
+	@include breakpoint(medium) {
+		right: -100%;
+	}
+	@include breakpoint(small) {
+		right: -100%;
+	}
+	@include breakpoint(xsmall) {
+		right: -100%;
+	}
 }
+
 #nav-toggle {
-    ~ label {
-        display: block;
+  ~ label {
 
-        // Nice bouncy transition
-        transition: .5s transform;
-        transition-timing-function: cubic-bezier(.38,.52,.37,1.27);
 
-        // Styling
-        background-color: white;
-        padding: 15px 0;
-        border: 1px solid grey;
-        border-radius: 3px;
-        width: 100px;
-        text-align: center;
+	    // Nice bouncy transition
+	    transition: .5s transform;
+	    transition-timing-function: cubic-bezier(.38,.52,.37,1.27);
 
-    }
+	    // Styling
+	    background-color: white;
+	    padding: 15px 0;
+	    border: 1px solid grey;
+	    border-radius: 3px;
+	    width: 100px;
+	    text-align: center;
+			@include breakpoint(xlarge) {
+				display: none;
+			}
+			@include breakpoint(large) {
+				display: none;
+			}
+			@include breakpoint(medium) {
+				display: block;
+			}
+			@include breakpoint(small) {
+				display: block;
+			}
+			@include breakpoint(xsmall) {
+				display: block;
+			}
+  }
 }
+
 #nav-toggle:checked {
-    ~ label {
-        // Active styles
-        background-color: grey;
-        color: white;
-        transform: translateX(-$flyout);
+  ~ label {
+	  // Active styles
+	  background-color: grey;
+	  color: white;
+	  transform: translateX(-$flyout);
 
-         &::before {
-             content: "Close"; // Changes word on toggle without markup change
-         }
-        .toggle-words {
-            display: none; // Changes word on toggle without markup change
-        }
-    }
+	   &::before {
+	   	content: "Close"; // Changes word on toggle without markup change
+	   }
+	  .toggle-words {
+	  	display: none; // Changes word on toggle without markup change
+	  }
+  }
 
-    ~ .menu {
-        // Slides the nav out
-        transform: translateX(-100vw);
-    }
+  ~ .menu {
+	  // Slides the nav out
+	  transform: translateX(-100vw);
+  }
 }
 
 
 .menu {
+	cursor: pointer;
+	background-color: #efefef;
+	transition: .53s transform;
+	transition-timing-function: cubic-bezier(.38,.52,.37,1);
 
-    cursor: pointer;
-    background-color: #efefef;
-
-    transition: .53s transform;
-    transition-timing-function: cubic-bezier(.38,.52,.37,1);
-    ul {
-        padding: 0;
-        margin: 0;
-    }
-    li {
-        list-style: none;
-        a {
-            text-decoration: none;
-            color: grey;
-            padding: 20px;
-            display: block;
-            border-bottom: 1px solid #ccc;
-        }
-    }
-
+	ul {
+	  padding: 0;
+	  margin: 0;
+	}
+	li {
+	  list-style: none;
+	  a {
+	    text-decoration: none;
+	    color: grey;
+	    padding: 20px;
+	    display: block;
+	    border-bottom: 1px solid #ccc;
+	  }
+	}
+	@include breakpoint(xlarge) {
+		background: transparent;
+	}
+	@include breakpoint(large) {
+		background: transparent;
+	}
+	@include breakpoint(medium) {
+		background: #666;
+	}
+	@include breakpoint(small) {
+		background: #666;
+	}
+	@include breakpoint(xsmall) {
+		background: #666;
+	}
 }
 
 
 
 .hamburger {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: inline-block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: inline-block;
 }
 
 .--top {
-	z-index: 100;
 }

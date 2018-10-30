@@ -5,13 +5,12 @@ import IconMedium from '../assets/images/icon-medium.svg';
 import IconTwitter from '../assets/images/icon-twitter.svg';
 
 const Navigation = () => (
-<div className="--top">
-  <nav className="navigation__desktop--white" role="navigation" aria-expanded="false" aria-label="Main menu">
 
+<div className="">
+  <nav className="" role="navigation" aria-expanded="false" aria-label="Main menu">
 
-
-  <div className="page">
-    <div className="hamburger">
+    <div className="page">
+      <div className="hamburger">
         <input type="checkbox" id="nav-toggle" />
         <label for="nav-toggle"><span className="toggle-words">Menu</span></label>
         <div className="menu">
@@ -26,12 +25,12 @@ const Navigation = () => (
             </li>
           </ul>
         </div>
+      </div>
     </div>
-</div>
+
   </nav>
-
-
 </div>
+
 );
 
 export default Navigation;
