@@ -934,9 +934,11 @@ $flyout: 250px; // reusable width. In practice on mobile, I use VWs
   height: 100%;
   width: $flyout;
 	@include breakpoint(xlarge) {
+		position: relative;
 		right: 0;
 	}
 	@include breakpoint(large) {
+		position: relative;
 		right: 0;
 	}
 	@include breakpoint(medium) {
@@ -1015,30 +1017,64 @@ $flyout: 250px; // reusable width. In practice on mobile, I use VWs
 	  padding: 0;
 	  margin: 0;
 	}
-	li {
-	  list-style: none;
-	  a {
-	    text-decoration: none;
-	    color: grey;
-	    padding: 20px;
-	    display: block;
-	    border-bottom: 1px solid #ccc;
-	  }
-	}
+
 	@include breakpoint(xlarge) {
 		background: transparent;
+		li {
+		  list-style: none;
+		  a {
+		    padding: 0 20px;
+		    display: block;
+		    border-bottom: 0px;
+		  }
+		}
 	}
 	@include breakpoint(large) {
 		background: transparent;
+		li {
+		  list-style: none;
+		  a {
+				padding: 0 20px;
+		    display: block;
+		    border-bottom: 0px;
+		  }
+		}
 	}
 	@include breakpoint(medium) {
 		background: #666;
+		li {
+		  list-style: none;
+		  a {
+		    text-decoration: none;
+		    padding: 0 20px;
+		    display: block;
+		    border-bottom: 1px solid #ccc;
+		  }
+		}
 	}
 	@include breakpoint(small) {
 		background: #666;
+		li {
+		  list-style: none;
+		  a {
+		    text-decoration: none;
+		    padding: 0 20px;
+		    display: block;
+		    border-bottom: 1px solid #ccc;
+		  }
+		}
 	}
 	@include breakpoint(xsmall) {
 		background: #666;
+		li {
+		  list-style: none;
+		  a {
+		    text-decoration: none;
+		    padding: 0 20px;
+		    display: block;
+		    border-bottom: 1px solid #ccc;
+		  }
+		}
 	}
 }
 
