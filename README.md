@@ -19,7 +19,10 @@ If you haven't already, you will need to do this and request access from the Top
 
 
 ### Install Gatsby CLI
-If you haven't already, install Gatsby CLI: `npm install --global gatsby-cli`
+If you haven't already, install Gatsby CLI.
+```
+npm install --global gatsby-cli
+```
 
 
 ### Clone Topaz site
